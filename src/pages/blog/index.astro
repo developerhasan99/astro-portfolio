@@ -1,0 +1,92 @@
+---
+import { getCollection } from "astro:content";
+import MainLayout from "../../layouts/MainLayout.astro";
+import right_arrow from "../../assets/icons/arrow-right.svg";
+import { Image } from "astro:assets";
+
+const posts = await getCollection("blog");
+---
+
+<MainLayout>
+	<section class="section-blog">
+		<div class="padding-global">
+			<div class="container-large">
+				<div class="padding-section-medium">
+					<div class="container-small">
+						<div class="text-align-center">
+							<div class="caption">blog</div><div class="space-small"></div><h2
+								class="text-color-black"
+							>
+								My Articles
+							</h2><div class="space-small"></div><div class="text-color-grey">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Suspendisse varius enim in eros elementum tristique. Duis
+								cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+								commodo diam libero vitae erat.
+							</div>
+						</div>
+					</div><div class="space-large"></div><div class="container-large">
+						<div class="w-dyn-list">
+							<div role="list" class="blog-grid w-dyn-items">
+								{
+									posts.map((post) => {
+										return (
+											<div role="listitem" class="w-dyn-item">
+												<a
+													href={`/blog/${post.slug}/`}
+													class="blog-item w-inline-block"
+												>
+													<div class="blog-item-image-wrapper">
+														<img
+															transition:name={`post-image-${post.id}`}
+															alt={post.data.title}
+															loading="lazy"
+															src={post.data.heroImage}
+															class="image"
+														/>
+													</div>
+													<div class="blog-item-content">
+														<div
+															class="text-size-small text-color-grey"
+															transition:name={`post-name-${post.id}`}
+														>
+															{post.data.pubDate}
+														</div>
+														<h3
+															class="heading-style-h5 text-color-black"
+															transition:name={`post-title-${post.id}`}
+														>
+															{post.data.title}
+														</h3>
+														<div
+															class="text-color-grey"
+															transition:name={`post-description-${post.id}`}
+														>
+															{post.data.description}
+														</div>
+														<div
+															class="button icon"
+															style="color: rgb(12, 17, 31);"
+														>
+															<div>Read more</div>
+															<img
+																class="icon-small"
+																loading="lazy"
+																src={right_arrow.src}
+																alt="Right Arrow"
+															/>
+														</div>
+													</div>
+												</a>
+											</div>
+										);
+									})
+								}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</MainLayout>

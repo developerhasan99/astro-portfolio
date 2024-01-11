@@ -1,0 +1,248 @@
+---
+// Import Fonts
+import "@fontsource-variable/raleway";
+import "@fontsource/ibm-plex-sans/400.css";
+import "@fontsource/ibm-plex-sans/500.css";
+import "@fontsource/ibm-plex-sans/600.css";
+// import Main Style
+import { ViewTransitions } from "astro:transitions";
+import "../assets/style.css";
+
+import white_logo from "../assets/logo-white.svg";
+---
+
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
+		<title>StudioUI - Webflow HTML website template</title>
+		<ViewTransitions />
+	</head>
+	<body>
+		<div class="page-wrapper">
+			<div class="absolute-circle">
+				<img
+					src="https://assets.website-files.com/634d6064d1c6401d462f6757/636cd086a8ca6a18765d84d4_absolute-circle.svg"
+					loading="lazy"
+					alt=""
+				/>
+			</div>
+			<div class="lines-wrapper">
+				<div class="absolute-line"></div>
+				<div class="absolute-line"></div>
+				<div class="absolute-line"></div>
+				<div class="absolute-line right-line"></div>
+			</div>
+			<div role="banner" class="nav-component w-nav">
+				<div class="padding-global">
+					<div class="nav-container">
+						<a
+							href="/"
+							aria-current="page"
+							class="nav-logo-link w-inline-block w--current"
+						>
+							<img
+								src={white_logo.src}
+								loading="lazy"
+								alt="Developer Hasan"
+								class="nav-logo"
+							/>
+						</a>
+						<nav role="navigation" class="nav-menu w-nav-menu">
+							<a href="/projects" class="nav-link w-nav-link">Work</a>
+							<a href="/#Services" class="nav-link w-nav-link">Services</a>
+							<a href="/about" class="nav-link w-nav-link">About</a>
+							<div class="nav-social-links">
+								<a
+									href="https://www.instagram.com"
+									class="nav-social-link w-inline-block"
+								>
+									<img
+										src="https://assets.website-files.com/634d6064d1c6401d462f6757/635ba5198505be6e5c38dd27_Instagram.svg"
+										loading="lazy"
+										alt=""
+									/>
+								</a>
+								<a
+									href="https://www.twitter.com"
+									class="nav-social-link w-inline-block"
+								>
+									<img
+										src="https://assets.website-files.com/634d6064d1c6401d462f6757/635ba5194ef05a9dc67d2efd_Twitter.svg"
+										loading="lazy"
+										alt=""
+									/>
+								</a>
+								<a
+									href="https://www.facebook.com"
+									class="nav-social-link w-inline-block"
+								>
+									<img
+										src="https://assets.website-files.com/634d6064d1c6401d462f6757/635ba519ed1688e2bd37d27f_Facebook.svg"
+										loading="lazy"
+										alt=""
+									/>
+								</a>
+								<a
+									href="https://www.linkedin.com"
+									class="nav-social-link w-inline-block"
+								>
+									<img
+										src="https://assets.website-files.com/634d6064d1c6401d462f6757/635ba5196dc18506a1153bb3_Linkedin.svg"
+										loading="lazy"
+										alt=""
+									/>
+								</a>
+							</div>
+						</nav>
+						<div
+							class="nav-menu-button w-nav-button"
+							style="-webkit-user-select: text;"
+							aria-label="menu"
+							role="button"
+							tabindex="0"
+							aria-controls="w-nav-overlay-0"
+							aria-haspopup="menu"
+							aria-expanded="false"
+						>
+							<div class="menu-icon">
+								<div class="menu-icon-line-top"></div>
+								<div class="menu-icon-line-middle"></div>
+								<div class="menu-icon-line-bottom"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
+			</div>
+			<main class="main-wrapper">
+				<slot />
+				<section class="section-cta">
+					<div class="padding-global">
+						<div class="container-medium">
+							<div class="padding-section-large">
+								<div class="cta-component">
+									<div class="text-align-center">
+										<div class="caption">Let’s Talk</div>
+										<div class="space-small"></div>
+										<h2 class="heading-style-h3">
+											Design solves business problems
+										</h2>
+										<div class="space-small"></div>
+										<div class="text-color-grey-400">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+											Suspendisse varius enim in eros elementum tristique. Duis
+											cursus, mi quis viverra ornare, eros dolor interdum nulla,
+											ut commodo diam libero vitae erat.
+										</div>
+										<div class="space-small"></div>
+										<a href="/contact" class="button w-button">Contact Now</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer-component">
+				<div class="padding-global">
+					<div class="container-large">
+						<div class="padding-section-small">
+							<div class="footer-top">
+								<a
+									href="/"
+									aria-current="page"
+									class="footer-logo-link w-inline-block w--current"
+								>
+									<img
+										src="https://assets.website-files.com/634d6064d1c6401d462f6757/635bca581cfdc01f723c4b0f_logo-white.png"
+										loading="lazy"
+										alt=""
+										class="footer-logo"
+									/>
+								</a>
+								<div class="text-color-grey-400">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									Suspendisse varius enim in eros elementum tristique.
+								</div>
+								<div class="footer-social-links">
+									<a
+										href="https://www.instagram.com"
+										class="footer-social-link w-inline-block"
+									>
+										<img
+											src="https://assets.website-files.com/634d6064d1c6401d462f6757/635ba5198505be6e5c38dd27_Instagram.svg"
+											loading="lazy"
+											alt=""
+										/>
+									</a>
+									<a
+										href="https://www.twitter.com"
+										class="footer-social-link w-inline-block"
+									>
+										<img
+											src="https://assets.website-files.com/634d6064d1c6401d462f6757/635ba5194ef05a9dc67d2efd_Twitter.svg"
+											loading="lazy"
+											alt=""
+										/>
+									</a>
+									<a
+										href="https://www.facebook.com"
+										class="footer-social-link w-inline-block"
+									>
+										<img
+											src="https://assets.website-files.com/634d6064d1c6401d462f6757/635ba519ed1688e2bd37d27f_Facebook.svg"
+											loading="lazy"
+											alt=""
+										/>
+									</a>
+									<a
+										href="https://www.linkedin.com"
+										class="footer-social-link w-inline-block"
+									>
+										<img
+											src="https://assets.website-files.com/634d6064d1c6401d462f6757/635ba5196dc18506a1153bb3_Linkedin.svg"
+											loading="lazy"
+											alt=""
+										/>
+									</a>
+								</div>
+								<div class="footer-nav-menu">
+									<a href="/projects" class="footer-link">Work</a>
+									<a href="#Services" class="footer-link">Services</a>
+									<a href="/about" class="footer-link">About</a>
+									<a href="/blog" class="footer-link">Blog</a>
+									<a href="/contact" class="footer-link">Contact</a>
+								</div>
+							</div>
+						</div>
+						<div class="padding-section-small">
+							<div class="footer-bottom">
+								<div class="footer-bottom-text">
+									© 2022 StudioUI by <a
+										href="https://mariamarin.webflow.io/"
+										class="footer-bottom-text-link">Maria Marin</a
+									>. Powered by <a
+										href="https://webflow.com/"
+										class="footer-bottom-text-link">Webflow</a
+									>.
+								</div>
+								<div class="footer-nav-menu">
+									<a href="/information/style-guide" class="footer-link"
+										>Style Guide</a
+									>
+									<a href="/information/license" class="footer-link">License</a>
+									<a href="/information/changelog" class="footer-link"
+										>Changelog</a
+									>
+									<a href="/404" class="footer-link">404 Page</a>
+									<a href="/401" class="footer-link">Protected Page</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
