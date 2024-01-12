@@ -3477,7 +3477,20 @@ blockquote {
 	height: 37.5rem;
 	border: 1px #000;
 	border-radius: 0.5rem;
-	overflow: hidden;
+	position: relative;
+}
+
+.tech-logos-bg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	translate: -50% -50%;
+	height: 200px;
+	width: 200px;
+	background-color: #02bbe6;
+	opacity: 0.15;
+	filter: blur(100px);
+	z-index: -1;
 }
 
 .home-about-component {

@@ -62,7 +62,7 @@ const icons = [
 });
 
 function TechLogos() {
-	return <Cloud>{icons}</Cloud>;
+	return <Cloud id="tech-logos-canvas">{icons}</Cloud>;
 }
 
 export default TechLogos;
