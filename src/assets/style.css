@@ -3332,17 +3332,23 @@ blockquote {
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.3);
 	justify-content: center;
+	transition: 0.3s ease-in-out;
 	align-items: center;
 	display: flex;
+	opacity: 0;
 	position: relative;
 }
 
+.projects-item:hover .projects-overlay {
+	opacity: 1 !important;
+}
 .projects-title {
 	text-transform: uppercase;
 }
 
 .projects-top-horizontal-line {
-	width: 5.75rem;
+	transition: width 0.3s ease-in-out;
+	width: 0rem;
 	height: 0.5px;
 	background-color: #fff;
 	margin-top: 1.5rem;
@@ -3354,21 +3360,9 @@ blockquote {
 	right: 0%;
 }
 
-.projects-top-vertical-line {
-	width: 0.5px;
-	height: 5.75rem;
-	background-color: #fff;
-	margin-top: 0.75rem;
-	margin-right: 1.5rem;
-	position: absolute;
-	top: 0%;
-	bottom: auto;
-	left: auto;
-	right: 0%;
-}
-
 .projects-bottom-horizontal-line {
-	width: 5.75rem;
+	transition: width 0.3s ease-in-out;
+	width: 0rem;
 	height: 0.5px;
 	background-color: #fff;
 	margin-bottom: 1.5rem;
@@ -3380,9 +3374,29 @@ blockquote {
 	right: auto;
 }
 
+.projects-item:hover .projects-top-horizontal-line,
+.projects-item:hover .projects-bottom-horizontal-line {
+	width: 5.75rem;
+}
+
+.projects-top-vertical-line {
+	transition: height 0.3s ease-in-out;
+	width: 0px;
+	height: 0rem;
+	background-color: #fff;
+	margin-top: 0.75rem;
+	margin-right: 1.5rem;
+	position: absolute;
+	top: 0%;
+	bottom: auto;
+	left: auto;
+	right: 0%;
+}
+
 .projects-bottom-vertical-line {
-	width: 0.5px;
-	height: 5.75rem;
+	transition: height 0.3s ease-in-out;
+	width: 0px;
+	height: 0rem;
 	background-color: #fff;
 	margin-bottom: 0.75rem;
 	margin-left: 1.5rem;
@@ -3391,6 +3405,12 @@ blockquote {
 	bottom: 0%;
 	left: 0%;
 	right: auto;
+}
+
+.projects-item:hover .projects-top-vertical-line,
+.projects-item:hover .projects-bottom-vertical-line {
+	width: 0.5px;
+	height: 5.75rem;
 }
 
 .testimonials-name {

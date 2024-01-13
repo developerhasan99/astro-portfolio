@@ -1,4 +1,5 @@
 ---
+import "aos/dist/aos.css";
 // Import Fonts
 import "@fontsource-variable/raleway";
 import "@fontsource/ibm-plex-sans/400.css";
@@ -121,7 +122,7 @@ import white_logo from "../assets/logo-white.svg";
 					<div class="padding-global">
 						<div class="container-medium">
 							<div class="padding-section-large">
-								<div class="cta-component">
+								<div class="cta-component" data-aos="fade-up">
 									<div class="text-align-center">
 										<div class="caption">Let’s Talk</div>
 										<div class="space-small"></div>
@@ -244,5 +245,10 @@ import white_logo from "../assets/logo-white.svg";
 				</div>
 			</footer>
 		</div>
+		<script>
+			import { aosInit } from "../js/aos";
+			// runs on initial page load
+			aosInit();
+		</script>
 	</body>
 </html>
