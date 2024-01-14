@@ -2,6 +2,8 @@
 import TechLogos from "../components/TechLogos";
 import MainLayout from "../layouts/MainLayout.astro";
 import freelancer_vector from "../assets/freelancer.svg";
+import rob_sandars_pic from "../assets/icons/rob-sandars.webp";
+import david_dav_pic from "../assets/icons/david-dav.webp";
 ---
 
 <MainLayout>
@@ -42,6 +44,9 @@ import freelancer_vector from "../assets/freelancer.svg";
 						</div>
 						<div class="header-image-wrapper" data-aos="zoom-in">
 							<img
+								data-aos="zoom-in"
+								data-aos-delay="600"
+								data-aos-duration="1000"
 								src={freelancer_vector.src}
 								loading="lazy"
 								alt="Freelancer"
@@ -118,6 +123,7 @@ import freelancer_vector from "../assets/freelancer.svg";
 							<div class="services-content">
 								<div class="services-image-wrapper">
 									<img
+										data-aos="fade-left"
 										src="https://assets.website-files.com/634d6064d1c6401d462f6757/636cc83ea918984d96338d3e_search-icon.svg"
 										loading="lazy"
 										alt=""
@@ -394,13 +400,13 @@ import freelancer_vector from "../assets/freelancer.svg";
 								<div class="testimonials-item-grid">
 									<div class="testimonials-image-wrapper">
 										<img
-											src="https://assets.website-files.com/634d6064d1c6401d462f6757/635bf57eec00edad70c52d06_Avatar%202.jpg"
+											src={david_dav_pic.src}
 											loading="lazy"
 											alt=""
 											class="image"
 										/>
 									</div>
-									<div class="testimonials-name">David</div>
+									<div class="testimonials-name">David Dav</div>
 									<div class="text-size-small text-color-grey-400">
 										United States
 									</div>
@@ -426,7 +432,7 @@ import freelancer_vector from "../assets/freelancer.svg";
 											class="image"
 										/>
 									</div>
-									<div class="testimonials-name">Edvard Evanrise</div>
+									<div class="testimonials-name">Bill Johnson</div>
 									<div class="text-size-small text-color-grey-400">
 										CEO, Evanrise
 									</div>
@@ -457,7 +463,7 @@ import freelancer_vector from "../assets/freelancer.svg";
 											class="image"
 										/>
 									</div>
-									<div class="testimonials-name">Lisa Jhonson</div>
+									<div class="testimonials-name">Shine Coronel</div>
 									<div class="text-size-small text-color-grey-400">
 										Singapore
 									</div>
@@ -531,7 +537,7 @@ import freelancer_vector from "../assets/freelancer.svg";
 								<div class="testimonials-item-grid">
 									<div class="testimonials-image-wrapper">
 										<img
-											src="https://assets.website-files.com/634d6064d1c6401d462f6757/635bf57ef2e4d3907c4308c9_Avatar%201.jpg"
+											src={rob_sandars_pic.src}
 											loading="lazy"
 											alt=""
 											class="image"

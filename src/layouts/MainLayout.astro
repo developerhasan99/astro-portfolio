@@ -10,13 +10,17 @@ import { ViewTransitions } from "astro:transitions";
 import "../assets/style.css";
 
 import white_logo from "../assets/logo-white.svg";
+// Social Icons
+import upwork_icon from "../assets/icons/upwork.svg";
+import facebook_icon from "../assets/icons/facebook.svg";
+import linkedin_icon from "../assets/icons/linkedin.svg";
 ---
 
 <html>
 	<head>
 		<meta charset="utf-8" />
 		<meta content="width=device-width, initial-scale=1" name="viewport" />
-		<title>StudioUI - Webflow HTML website template</title>
+		<title>Mehedi Hasan - Fullstack Web Developer</title>
 		<ViewTransitions />
 	</head>
 	<body>
@@ -55,44 +59,22 @@ import white_logo from "../assets/logo-white.svg";
 							<a href="/about" class="nav-link w-nav-link">About</a>
 							<div class="nav-social-links">
 								<a
-									href="https://www.instagram.com"
+									href="https://www.upwork.com"
 									class="nav-social-link w-inline-block"
 								>
-									<img
-										src="https://assets.website-files.com/634d6064d1c6401d462f6757/635ba5198505be6e5c38dd27_Instagram.svg"
-										loading="lazy"
-										alt=""
-									/>
-								</a>
-								<a
-									href="https://www.twitter.com"
-									class="nav-social-link w-inline-block"
-								>
-									<img
-										src="https://assets.website-files.com/634d6064d1c6401d462f6757/635ba5194ef05a9dc67d2efd_Twitter.svg"
-										loading="lazy"
-										alt=""
-									/>
+									<img src={upwork_icon.src} loading="lazy" alt="Upwork" />
 								</a>
 								<a
 									href="https://www.facebook.com"
 									class="nav-social-link w-inline-block"
 								>
-									<img
-										src="https://assets.website-files.com/634d6064d1c6401d462f6757/635ba519ed1688e2bd37d27f_Facebook.svg"
-										loading="lazy"
-										alt=""
-									/>
+									<img src={facebook_icon.src} loading="lazy" alt="Facebook" />
 								</a>
 								<a
 									href="https://www.linkedin.com"
 									class="nav-social-link w-inline-block"
 								>
-									<img
-										src="https://assets.website-files.com/634d6064d1c6401d462f6757/635ba5196dc18506a1153bb3_Linkedin.svg"
-										loading="lazy"
-										alt=""
-									/>
+									<img src={linkedin_icon.src} loading="lazy" alt="Linkedin" />
 								</a>
 							</div>
 						</nav>
@@ -127,7 +109,7 @@ import white_logo from "../assets/logo-white.svg";
 										<div class="caption">Let’s Talk</div>
 										<div class="space-small"></div>
 										<h2 class="heading-style-h3">
-											Design solves business problems
+											Discuss your business problems
 										</h2>
 										<div class="space-small"></div>
 										<div class="text-color-grey-400">
@@ -168,43 +150,29 @@ import white_logo from "../assets/logo-white.svg";
 								</div>
 								<div class="footer-social-links">
 									<a
-										href="https://www.instagram.com"
-										class="footer-social-link w-inline-block"
+										href="https://www.upwork.com"
+										class="nav-social-link w-inline-block"
 									>
-										<img
-											src="https://assets.website-files.com/634d6064d1c6401d462f6757/635ba5198505be6e5c38dd27_Instagram.svg"
-											loading="lazy"
-											alt=""
-										/>
-									</a>
-									<a
-										href="https://www.twitter.com"
-										class="footer-social-link w-inline-block"
-									>
-										<img
-											src="https://assets.website-files.com/634d6064d1c6401d462f6757/635ba5194ef05a9dc67d2efd_Twitter.svg"
-											loading="lazy"
-											alt=""
-										/>
+										<img src={upwork_icon.src} loading="lazy" alt="Upwork" />
 									</a>
 									<a
 										href="https://www.facebook.com"
-										class="footer-social-link w-inline-block"
+										class="nav-social-link w-inline-block"
 									>
 										<img
-											src="https://assets.website-files.com/634d6064d1c6401d462f6757/635ba519ed1688e2bd37d27f_Facebook.svg"
+											src={facebook_icon.src}
 											loading="lazy"
-											alt=""
+											alt="Facebook"
 										/>
 									</a>
 									<a
 										href="https://www.linkedin.com"
-										class="footer-social-link w-inline-block"
+										class="nav-social-link w-inline-block"
 									>
 										<img
-											src="https://assets.website-files.com/634d6064d1c6401d462f6757/635ba5196dc18506a1153bb3_Linkedin.svg"
+											src={linkedin_icon.src}
 											loading="lazy"
-											alt=""
+											alt="Linkedin"
 										/>
 									</a>
 								</div>
@@ -214,30 +182,6 @@ import white_logo from "../assets/logo-white.svg";
 									<a href="/about" class="footer-link">About</a>
 									<a href="/blog" class="footer-link">Blog</a>
 									<a href="/contact" class="footer-link">Contact</a>
-								</div>
-							</div>
-						</div>
-						<div class="padding-section-small">
-							<div class="footer-bottom">
-								<div class="footer-bottom-text">
-									© 2022 StudioUI by <a
-										href="https://mariamarin.webflow.io/"
-										class="footer-bottom-text-link">Maria Marin</a
-									>. Powered by <a
-										href="https://webflow.com/"
-										class="footer-bottom-text-link">Webflow</a
-									>.
-								</div>
-								<div class="footer-nav-menu">
-									<a href="/information/style-guide" class="footer-link"
-										>Style Guide</a
-									>
-									<a href="/information/license" class="footer-link">License</a>
-									<a href="/information/changelog" class="footer-link"
-										>Changelog</a
-									>
-									<a href="/404" class="footer-link">404 Page</a>
-									<a href="/401" class="footer-link">Protected Page</a>
 								</div>
 							</div>
 						</div>
