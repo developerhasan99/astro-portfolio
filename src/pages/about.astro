@@ -1,9 +1,50 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import TechLogos from "../components/TechLogos";
 ---
 
 <MainLayout>
-	<section class="section-about">
+	<section class="section-home-about">
+		<div class="padding-global">
+			<div class="container-large">
+				<div class="padding-section-medium">
+					<div class="home-about-component">
+						<div class="home-about-image-wrapper">
+							<div class="tech-logos-bg"></div>
+							<TechLogos client:visible />
+						</div>
+						<div class="home-about-content">
+							<div class="caption text-color-secondary">About</div>
+							<div class="space-small"></div>
+							<h2 class="heading-style-h2">Little more about me.</h2>
+							<div class="space-medium"></div>
+							<div class="text-size-medium text-color-grey-400">
+								<p>
+									Hey! My name is Mehedi Hasan and I'm a UX Enthusiast with
+									skills in Front-End and WordPress Development. Since beginning
+									my journey as a freelance designer nearly 6 years ago.
+								</p>
+								<p>
+									I've done remote work for agencies, consulted for startups,
+									and collaborated with talented people to create digital
+									products for both business and consumer use.
+								</p>
+								<p>
+									When I'm not on the computer, I enjoy reading books, swimming,
+									and petting animals.
+								</p>
+							</div>
+							<div class="space-medium"></div>
+							<a href="/about" class="button secondary w-button"
+								>More About Me</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- <section class="section-about">
 		<div class="padding-global">
 			<div class="container-large">
 				<div class="padding-section-medium">
@@ -41,7 +82,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 	<section class="section-results">
 		<div class="padding-global">
 			<div class="container-large">
@@ -79,14 +120,14 @@ import MainLayout from "../layouts/MainLayout.astro";
 							</h1>
 							<div class="space-medium"></div>
 							<div class="text-size-medium text-color-grey-400">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-								Suspendisse varius enim in eros elementum tristique. Duis
-								cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
-								commodo diam libero vitae erat.<br />
-								<br />Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-								Suspendisse varius enim in eros elementum tristique. Duis
-								cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
-								commodo diam libero vitae erat.
+								Witness the tangible impact of my skills and expertise. From
+								innovative projects to successful campaigns, each entry
+								showcases measurable achievements and quantifiable outcomes.
+								<br />
+								<br />
+								Dive into a compelling narrative of accomplishments that reflect
+								my dedication, creativity, and ability to deliver impactful results
+								consistently.
 							</div>
 						</div>
 					</div>
@@ -95,6 +136,122 @@ import MainLayout from "../layouts/MainLayout.astro";
 		</div>
 	</section>
 	<section id="Services" class="section-services">
+		<div class="padding-global">
+			<div class="container-large">
+				<div class="padding-section-medium">
+					<div class="max-width-large">
+						<div class="caption text-color-secondary">Services</div>
+						<div class="space-small"></div>
+						<h2>Discover my unique skillset</h2>
+						<div class="space-medium"></div>
+						<div class="text-color-grey-400">
+							Check out my services that will suit your needs.
+						</div>
+					</div>
+					<div class="space-large"></div>
+					<div class="services-component">
+						<div class="services-wrapper">
+							<div class="services-arrow-wrapper">
+								<img
+									src="https://assets.website-files.com/634d6064d1c6401d462f6757/635ba518094146ff4802d7b1_blue-arrow.svg"
+									loading="lazy"
+									alt=""
+								/>
+							</div>
+							<div class="services-content">
+								<div class="services-image-wrapper">
+									<img
+										data-aos="fade-left"
+										src="https://assets.website-files.com/634d6064d1c6401d462f6757/636cc83ea918984d96338d3e_search-icon.svg"
+										loading="lazy"
+										alt=""
+									/>
+								</div>
+								<h3 class="heading-style-h5">UX Research</h3>
+								<div class="text-color-grey-400">
+									I do UX research to provide an Up to Date user experience to
+									my client. And it's a crucial aspect of the design process.
+								</div>
+							</div>
+						</div>
+						<div class="services-wrapper">
+							<div class="services-arrow-wrapper">
+								<img
+									src="https://assets.website-files.com/634d6064d1c6401d462f6757/635ba5194ef05a41047d2efc_purple-arrow.svg"
+									loading="lazy"
+									alt=""
+								/>
+							</div>
+							<div class="services-content">
+								<div class="services-image-wrapper">
+									<img
+										data-aos="fade-left"
+										src="https://assets.website-files.com/634d6064d1c6401d462f6757/636cc83ea62e06890baa590c_design-icon.svg"
+										loading="lazy"
+										alt=""
+									/>
+								</div>
+								<h3 class="heading-style-h5">Design</h3>
+								<div class="text-color-grey-400">
+									I value simple content structure, clean design patterns, and
+									thoughtful interactions.
+								</div>
+							</div>
+						</div>
+						<div class="services-wrapper">
+							<div class="services-arrow-wrapper">
+								<img
+									src="https://assets.website-files.com/634d6064d1c6401d462f6757/635ba518094146ff4802d7b1_blue-arrow.svg"
+									loading="lazy"
+									alt=""
+								/>
+							</div>
+							<div class="services-content">
+								<div class="services-image-wrapper">
+									<img
+										data-aos="fade-left"
+										src="https://assets.website-files.com/634d6064d1c6401d462f6757/636cc83e58f7603323ad6098_code-icon.svg"
+										loading="lazy"
+										alt=""
+									/>
+								</div>
+								<h3 class="heading-style-h5">Development</h3>
+								<div class="text-color-grey-400">
+									I like to code things from scratch, and enjoy bringing ideas
+									to life in the browser.
+								</div>
+							</div>
+						</div>
+						<div class="services-wrapper">
+							<div class="services-arrow-wrapper">
+								<img
+									src="https://assets.website-files.com/634d6064d1c6401d462f6757/635ba5194ef05a41047d2efc_purple-arrow.svg"
+									loading="lazy"
+									alt=""
+								/>
+							</div>
+							<div class="services-content">
+								<div class="services-image-wrapper">
+									<img
+										data-aos="fade-left"
+										src="https://assets.website-files.com/634d6064d1c6401d462f6757/636cc83fca23fde186e9871d_message-icon.svg"
+										loading="lazy"
+										alt=""
+									/>
+								</div>
+								<h3 class="heading-style-h5">Support</h3>
+								<div class="text-color-grey-400">
+									I provide my Clients full support on their bussiness issue
+									relevent to my knowledge and skills.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- <section id="Services" class="section-services">
 		<div class="padding-global">
 			<div class="container-large">
 				<div class="padding-section-medium">
@@ -216,5 +373,5 @@ import MainLayout from "../layouts/MainLayout.astro";
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 </MainLayout>

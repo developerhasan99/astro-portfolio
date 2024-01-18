@@ -4,6 +4,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 import freelancer_vector from "../assets/freelancer.svg";
 import rob_sandars_pic from "../assets/icons/rob-sandars.webp";
 import david_dav_pic from "../assets/icons/david-dav.webp";
+import bill_johnson_pic from "../assets/icons/bill-jhonson.webp";
 ---
 
 <MainLayout>
@@ -398,15 +399,17 @@ import david_dav_pic from "../assets/icons/david-dav.webp";
 									pleased with his work!”
 								</div>
 								<div class="testimonials-item-grid">
-									<div class="testimonials-image-wrapper">
-										<img
-											src={david_dav_pic.src}
-											loading="lazy"
-											alt=""
-											class="image"
-										/>
+									<div>
+										<div class="testimonials-image-wrapper">
+											<img
+												src={david_dav_pic.src}
+												loading="lazy"
+												alt=""
+												class="image"
+											/>
+										</div>
+										<div class="testimonials-name">David Dav</div>
 									</div>
-									<div class="testimonials-name">David Dav</div>
 									<div class="text-size-small text-color-grey-400">
 										United States
 									</div>
@@ -426,7 +429,7 @@ import david_dav_pic from "../assets/icons/david-dav.webp";
 								<div class="testimonials-item-grid">
 									<div class="testimonials-image-wrapper">
 										<img
-											src="https://assets.website-files.com/634d6064d1c6401d462f6757/635bf57e850dc149d3421430_Avatar%204.jpg"
+											src={bill_johnson_pic.src}
 											loading="lazy"
 											alt=""
 											class="image"
