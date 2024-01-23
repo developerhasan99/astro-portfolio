@@ -4898,3 +4898,11 @@ blockquote {
 #w-node-_8445e0dd-fe78-b990-c270-5e4a1ba5b73b-60a8260e {
 	grid-area: span 1 / span 1 / span 1 / span 1;
 }
+
+.assistive-text {
+	height: 1px;
+	width: 1px;
+	position: absolute;
+	overflow: hidden;
+	top: -10px;
+}

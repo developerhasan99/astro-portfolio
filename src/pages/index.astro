@@ -1,6 +1,10 @@
 ---
+import { getCollection } from "astro:content";
 import TechLogos from "../components/TechLogos";
 import MainLayout from "../layouts/MainLayout.astro";
+
+// LOAD IMAGES
+import upwork_icon from "../assets/icons/upwork.svg";
 import freelancer_vector from "../assets/freelancer.svg";
 import rob_sandars_pic from "../assets/rob-sandars.webp";
 import david_dav_pic from "../assets/david-dav.webp";
@@ -9,7 +13,8 @@ import right_arrow from "../assets/icons/arrow-right.svg";
 import stars from "../assets/star.svg";
 import rafal_pic from "../assets/rafal.jpg";
 import shaine_pic from "../assets/shaine.jpg";
-import { getCollection } from "astro:content";
+
+// RENDER CONTENTS
 const posts = await getCollection("project");
 const blogPosts = await getCollection("blog");
 ---
@@ -34,8 +39,16 @@ const blogPosts = await getCollection("blog");
 							<div class="space-medium"></div>
 							<a
 								href="https://www.upwork.com/freelancers/~01e0d306e3c729d12e"
-								class="button w-button">Hire Me</a
+								class="button w-button"
 							>
+								Hire Me
+								<img
+									height="20"
+									width="20"
+									src={upwork_icon.src}
+									alt="at Upwork"
+								/>
+							</a>
 						</div>
 						<div class="header-image-wrapper">
 							<img
@@ -81,7 +94,6 @@ const blogPosts = await getCollection("blog");
 								</p>
 							</div>
 							<div class="space-medium"></div>
-							<a href="#" class="button secondary w-button">Download my CV</a>
 						</div>
 					</div>
 				</div>

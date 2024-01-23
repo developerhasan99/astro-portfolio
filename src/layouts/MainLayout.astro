@@ -10,6 +10,9 @@ import { ViewTransitions } from "astro:transitions";
 import Navbar from "../partials/Navbar.astro";
 import Footer from "../partials/Footer.astro";
 import "../assets/css/style.css";
+
+// Import Images
+import favicon from "../assets/favicon.png";
 import absolute_circle from "../assets/absolute-circle.svg";
 ---
 
@@ -18,7 +21,7 @@ import absolute_circle from "../assets/absolute-circle.svg";
 		<meta charset="utf-8" />
 		<meta content="width=device-width, initial-scale=1" name="viewport" />
 		<title>Mehedi Hasan - Fullstack Web Developer</title>
-		<link rel="icon" type="image/x-icon" href="../assets/favicon.png" />
+		<link rel="icon" type="image/x-icon" href={favicon.src} />
 		<ViewTransitions />
 	</head>
 	<body>
