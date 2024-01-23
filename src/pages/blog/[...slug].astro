@@ -2,6 +2,7 @@
 import type { GetStaticPaths } from "astro";
 import { getCollection } from "astro:content";
 import MainLayout from "../../layouts/MainLayout.astro";
+import right_arrow from "../../assets/icons/arrow-right.svg";
 
 export const getStaticPaths = (async () => {
 	const posts = await getCollection("blog");
@@ -13,7 +14,7 @@ export const getStaticPaths = (async () => {
 		props: post,
 	}));
 }) satisfies GetStaticPaths;
-
+const blogPosts = await getCollection("blog");
 const post = Astro.props;
 const { Content } = await post.render();
 ---
@@ -47,12 +48,7 @@ const { Content } = await post.render();
 							</div>
 							<div class="space-medium"></div>
 							<a href="/blog" class="button white-icon w-inline-block">
-								<img
-									src="https://assets.website-files.com/634d6064d1c6401d462f6757/63713c580d7d56d05f9d3400_chevron-white-left.svg"
-									loading="lazy"
-									alt=""
-									class="icon-small"
-								/>
+								&lAarr;
 								<div>Back to Blog</div>
 							</a>
 						</div>
@@ -92,135 +88,69 @@ const { Content } = await post.render();
 								<h2 class="text-color-black">Lastest Articles</h2>
 								<div class="space-small"></div>
 								<div class="text-color-grey">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-									Suspendisse varius enim in eros elementum tristique.
+									Discover our latest articles—insightful reads spanning tech,
+									lifestyle, and trending discussions. Stay informed and
+									engaged!
 								</div>
 							</div>
 							<a href="/blog" class="button w-button">See All Articles</a>
 						</div>
 						<div class="w-dyn-list">
 							<div role="list" class="blog-grid w-dyn-items">
-								<div role="listitem" class="w-dyn-item">
-									<a
-										href="/post/the-apps-i-love-the-most-for-design-and-productivity"
-										class="blog-item w-inline-block"
-									>
-										<div class="blog-item-image-wrapper">
-											<img
-												alt=""
-												loading="lazy"
-												src="https://assets.website-files.com/6364e2710bb372fbb357f912/6364e8628732872a39069a1f_laptop-blue.jpg"
-												sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 45vw, (max-width: 1919px) 30vw, 448px"
-												srcset="https://assets.website-files.com/6364e2710bb372fbb357f912/6364e8628732872a39069a1f_laptop-blue-p-500.jpg 500w, https://assets.website-files.com/6364e2710bb372fbb357f912/6364e8628732872a39069a1f_laptop-blue-p-800.jpg 800w, https://assets.website-files.com/6364e2710bb372fbb357f912/6364e8628732872a39069a1f_laptop-blue-p-1080.jpg 1080w, https://assets.website-files.com/6364e2710bb372fbb357f912/6364e8628732872a39069a1f_laptop-blue-p-1600.jpg 1600w, https://assets.website-files.com/6364e2710bb372fbb357f912/6364e8628732872a39069a1f_laptop-blue.jpg 1920w"
-												class="image"
-											/>
-										</div>
-										<div class="blog-item-content">
-											<div class="text-size-small text-color-grey">
-												October 25, 2022
+								{
+									blogPosts.map((post) => {
+										return (
+											<div role="listitem" class="w-dyn-item">
+												<a
+													href={`/blog/${post.slug}/`}
+													class="blog-item w-inline-block"
+												>
+													<div class="blog-item-image-wrapper">
+														<img
+															transition:name={`post-image-${post.id}`}
+															alt={post.data.title}
+															loading="lazy"
+															src={post.data.heroImage}
+															class="image"
+														/>
+													</div>
+													<div class="blog-item-content">
+														<div
+															class="text-size-small text-color-grey"
+															transition:name={`post-name-${post.id}`}
+														>
+															{post.data.pubDate}
+														</div>
+														<h3
+															class="heading-style-h5 text-color-black"
+															transition:name={`post-title-${post.id}`}
+														>
+															{post.data.title}
+														</h3>
+														<div
+															class="text-color-grey"
+															transition:name={`post-description-${post.id}`}
+														>
+															{post.data.description}
+														</div>
+														<div
+															class="button icon"
+															style="color: rgb(12, 17, 31);"
+														>
+															<div>Read more</div>
+															<img
+																class="icon-small"
+																loading="lazy"
+																src={right_arrow.src}
+																alt="Right Arrow"
+															/>
+														</div>
+													</div>
+												</a>
 											</div>
-											<h3 class="heading-style-h5 text-color-black">
-												The apps I love the most for design and productivity
-											</h3>
-											<div class="text-color-grey">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-												Praesent ipsum arcu, tempor semper vulputate ut,
-												volutpat eget ex.
-											</div>
-											<div class="button icon" style="color: rgb(12, 17, 31);">
-												<div>Read more</div>
-												<img
-													src="https://assets.website-files.com/634d6064d1c6401d462f6757/635ba5189614b61860455e35_arrow-right.svg"
-													loading="lazy"
-													alt=""
-													class="icon-small"
-													style="transform: translate3d(0rem, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-												/>
-											</div>
-										</div>
-									</a>
-								</div>
-								<div role="listitem" class="w-dyn-item">
-									<a
-										href="/post/how-mobile-apps-help-in-digital-transformation-of-businesses"
-										class="blog-item w-inline-block"
-									>
-										<div class="blog-item-image-wrapper">
-											<img
-												alt=""
-												loading="lazy"
-												src="https://assets.website-files.com/6364e2710bb372fbb357f912/6364e8582a3c8284d65654da_mobile-blue.jpg"
-												sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 45vw, (max-width: 1919px) 30vw, 448px"
-												srcset="https://assets.website-files.com/6364e2710bb372fbb357f912/6364e8582a3c8284d65654da_mobile-blue-p-500.jpg 500w, https://assets.website-files.com/6364e2710bb372fbb357f912/6364e8582a3c8284d65654da_mobile-blue-p-800.jpg 800w, https://assets.website-files.com/6364e2710bb372fbb357f912/6364e8582a3c8284d65654da_mobile-blue-p-1080.jpg 1080w, https://assets.website-files.com/6364e2710bb372fbb357f912/6364e8582a3c8284d65654da_mobile-blue-p-1600.jpg 1600w, https://assets.website-files.com/6364e2710bb372fbb357f912/6364e8582a3c8284d65654da_mobile-blue.jpg 1920w"
-												class="image"
-											/>
-										</div>
-										<div class="blog-item-content">
-											<div class="text-size-small text-color-grey">
-												September 28, 2022
-											</div>
-											<h3 class="heading-style-h5 text-color-black">
-												How mobile apps help in Digital Transformation of
-												Businesses
-											</h3>
-											<div class="text-color-grey">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-												Praesent ipsum arcu, tempor semper vulputate ut,
-												volutpat eget ex.
-											</div>
-											<div class="button icon" style="color: rgb(12, 17, 31);">
-												<div>Read more</div>
-												<img
-													src="https://assets.website-files.com/634d6064d1c6401d462f6757/635ba5189614b61860455e35_arrow-right.svg"
-													loading="lazy"
-													alt=""
-													class="icon-small"
-													style="transform: translate3d(0rem, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-												/>
-											</div>
-										</div>
-									</a>
-								</div>
-								<div role="listitem" class="w-dyn-item">
-									<a
-										href="/post/why-digital-audio-devices-are-important-for-designers"
-										class="blog-item w-inline-block"
-									>
-										<div class="blog-item-image-wrapper">
-											<img
-												alt=""
-												loading="lazy"
-												src="https://assets.website-files.com/6364e2710bb372fbb357f912/6364e8fdd010ce39938c320f_airpods.jpg"
-												sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 45vw, (max-width: 1919px) 30vw, 448px"
-												srcset="https://assets.website-files.com/6364e2710bb372fbb357f912/6364e8fdd010ce39938c320f_airpods-p-500.jpg 500w, https://assets.website-files.com/6364e2710bb372fbb357f912/6364e8fdd010ce39938c320f_airpods-p-800.jpg 800w, https://assets.website-files.com/6364e2710bb372fbb357f912/6364e8fdd010ce39938c320f_airpods-p-1080.jpg 1080w, https://assets.website-files.com/6364e2710bb372fbb357f912/6364e8fdd010ce39938c320f_airpods-p-1600.jpg 1600w, https://assets.website-files.com/6364e2710bb372fbb357f912/6364e8fdd010ce39938c320f_airpods.jpg 1920w"
-												class="image"
-											/>
-										</div>
-										<div class="blog-item-content">
-											<div class="text-size-small text-color-grey">
-												August 11, 2022
-											</div>
-											<h3 class="heading-style-h5 text-color-black">
-												Why digital audio devices are important for designers
-											</h3>
-											<div class="text-color-grey">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-												Praesent ipsum arcu, tempor semper vulputate ut,
-												volutpat eget ex.
-											</div>
-											<div class="button icon" style="color: rgb(12, 17, 31);">
-												<div>Read more</div>
-												<img
-													src="https://assets.website-files.com/634d6064d1c6401d462f6757/635ba5189614b61860455e35_arrow-right.svg"
-													loading="lazy"
-													alt=""
-													class="icon-small"
-													style="transform: translate3d(0rem, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-												/>
-											</div>
-										</div>
-									</a>
-								</div>
+										);
+									})
+								}
 							</div>
 						</div>
 					</div>

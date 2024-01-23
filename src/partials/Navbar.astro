@@ -4,6 +4,8 @@ import white_logo from "../assets/logo-white.svg";
 import upwork_icon from "../assets/icons/upwork.svg";
 import facebook_icon from "../assets/icons/facebook.svg";
 import linkedin_icon from "../assets/icons/linkedin.svg";
+import menu_open_icon from "../assets/icons/menu-svgrepo-com.svg";
+import menu_close_icon from "../assets/icons/cross-svgrepo-com.svg";
 ---
 
 <div role="banner" class="nav-component w-nav">
@@ -22,6 +24,14 @@ import linkedin_icon from "../assets/icons/linkedin.svg";
 				/>
 			</a>
 
+			<button class="hamburger-menu-btn">
+				<div class="menu-open">
+					<img src={menu_open_icon.src} alt="" />
+				</div>
+				<div class="menu-close">
+					<img src={menu_close_icon.src} alt="" />
+				</div>
+			</button>
 			<nav role="navigation" class="nav-menu w-nav-menu">
 				<a href="/project" class="nav-link w-nav-link">Work</a>
 				<a href="/#Services" class="nav-link w-nav-link">Services</a>
@@ -47,24 +57,6 @@ import linkedin_icon from "../assets/icons/linkedin.svg";
 					</a>
 				</div>
 			</nav>
-
-			<!-- <div
-				class="nav-menu-button w-nav-button"
-				style="-webkit-user-select: text;"
-				aria-label="menu"
-				role="button"
-				tabindex="0"
-				aria-controls="w-nav-overlay-0"
-				aria-haspopup="menu"
-				aria-expanded="false"
-			>
-				<div class="menu-icon">
-					<div class="menu-icon-line-top"></div>
-					<div class="menu-icon-line-middle"></div>
-					<div class="menu-icon-line-bottom"></div>
-				</div>
-			</div> -->
 		</div>
 	</div>
-	<div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
 </div>
