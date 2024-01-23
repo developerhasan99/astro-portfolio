@@ -5,6 +5,10 @@ import freelancer_vector from "../assets/freelancer.svg";
 import rob_sandars_pic from "../assets/icons/rob-sandars.webp";
 import david_dav_pic from "../assets/icons/david-dav.webp";
 import bill_johnson_pic from "../assets/icons/bill-jhonson.webp";
+import right_arrow from "../assets/icons/arrow-right.svg";
+import { getCollection } from "astro:content";
+const posts = await getCollection("project");
+const blogPosts = await getCollection("blog");
 ---
 
 <MainLayout>
@@ -196,160 +200,67 @@ import bill_johnson_pic from "../assets/icons/bill-jhonson.webp";
 			</div>
 		</div>
 	</section>
+
 	<section class="section-projects">
 		<div class="padding-global">
 			<div class="padding-section-medium">
 				<div class="container-small">
 					<div class="text-align-center">
-						<h2>My Lastest Projects</h2>
-						<div class="space-small"></div>
-						<div class="text-color-grey-400">
+						<h2>My Projects</h2><div class="space-small"></div><div
+							class="text-color-grey-400"
+						>
 							Dynamic projects, blending creativity and functionality. Explore
 							my portfolio for a glimpse into versatile designs that leave a
 							lasting impression.
 						</div>
 					</div>
-				</div>
-				<div class="space-large"></div>
-				<div class="w-dyn-list">
+				</div><div class="space-large"></div><div class="w-dyn-list">
 					<div role="list" class="projects-component w-dyn-items">
-						<div role="listitem" class="w-dyn-item">
-							<a
-								style='background-image:url("https://assets-global.website-files.com/6364e2710bb372fbb357f912/6364e2ded3daac2e14977780_joystick-blue.jpg")'
-								href="/project/gaming-website"
-								class="projects-item w-inline-block"
-							>
-								<div class="projects-overlay">
-									<div class="projects-title">Gaming Website</div>
-									<div class="projects-top-horizontal-line"></div>
-									<div class="projects-top-vertical-line"></div>
-									<div class="projects-bottom-horizontal-line"></div>
-									<div class="projects-bottom-vertical-line"></div>
-								</div>
-							</a>
-						</div>
-						<div role="listitem" class="w-dyn-item">
-							<a
-								style='background-image:url("https://assets-global.website-files.com/6364e2710bb372fbb357f912/6364e4072a3c82665e55f2c7_blue-ball-3d.jpg")'
-								href="/project/sphere-mobile-app"
-								class="projects-item w-inline-block"
-							>
-								<div class="projects-overlay">
-									<div class="projects-title">Sphere Mobile App</div>
-									<div class="projects-top-horizontal-line"></div>
-									<div class="projects-top-vertical-line"></div>
-									<div class="projects-bottom-horizontal-line"></div>
-									<div class="projects-bottom-vertical-line"></div>
-								</div>
-							</a>
-						</div>
-						<div role="listitem" class="w-dyn-item">
-							<a
-								style='background-image:url("https://assets-global.website-files.com/6364e2710bb372fbb357f912/6364e4182a3c8242dc55f310_website-design.jpg")'
-								href="/project/beast-design-system"
-								class="projects-item w-inline-block"
-							>
-								<div class="projects-overlay">
-									<div class="projects-title">Beast Design System</div>
-									<div class="projects-top-horizontal-line"></div>
-									<div class="projects-top-vertical-line"></div>
-									<div class="projects-bottom-horizontal-line"></div>
-									<div class="projects-bottom-vertical-line"></div>
-								</div>
-							</a>
-						</div>
-						<div role="listitem" class="w-dyn-item">
-							<a
-								style='background-image:url("https://assets-global.website-files.com/6364e2710bb372fbb357f912/6364e424b7651533d26bb9e6_waves-background.jpg")'
-								href="/project/neptune-ux-ui-design"
-								class="projects-item w-inline-block"
-							>
-								<div class="projects-overlay">
-									<div class="projects-title">Neptune UX/UI Design</div>
-									<div class="projects-top-horizontal-line"></div>
-									<div class="projects-top-vertical-line"></div>
-									<div class="projects-bottom-horizontal-line"></div>
-									<div class="projects-bottom-vertical-line"></div>
-								</div>
-							</a>
-						</div>
-						<div role="listitem" class="w-dyn-item">
-							<a
-								style='background-image:url("https://assets-global.website-files.com/6364e2710bb372fbb357f912/6364e42dc01358defd3aae60_app-store-logo.jpg")'
-								href="/project/appstore-redesign"
-								class="projects-item w-inline-block"
-							>
-								<div class="projects-overlay">
-									<div class="projects-title">Appstore Redesign</div>
-									<div class="projects-top-horizontal-line"></div>
-									<div class="projects-top-vertical-line"></div>
-									<div class="projects-bottom-horizontal-line"></div>
-									<div class="projects-bottom-vertical-line"></div>
-								</div>
-							</a>
-						</div>
-						<div role="listitem" class="w-dyn-item">
-							<a
-								style='background-image:url("https://assets-global.website-files.com/6364e2710bb372fbb357f912/6364e44b013e6aa3e9470fb0_monster-3d.jpg")'
-								href="/project/catch-n-play-app"
-								class="projects-item w-inline-block"
-							>
-								<div class="projects-overlay">
-									<div class="projects-title">Catch n’ play App</div>
-									<div class="projects-top-horizontal-line"></div>
-									<div class="projects-top-vertical-line"></div>
-									<div class="projects-bottom-horizontal-line"></div>
-									<div class="projects-bottom-vertical-line"></div>
-								</div>
-							</a>
-						</div>
-						<div role="listitem" class="w-dyn-item">
-							<a
-								style='background-image:url("https://assets-global.website-files.com/6364e2710bb372fbb357f912/6364e4584443c4657b6f7592_building-blocks.jpg")'
-								href="/project/web-app-b2b"
-								class="projects-item w-inline-block"
-							>
-								<div class="projects-overlay">
-									<div class="projects-title">Web-app B2b</div>
-									<div class="projects-top-horizontal-line"></div>
-									<div class="projects-top-vertical-line"></div>
-									<div class="projects-bottom-horizontal-line"></div>
-									<div class="projects-bottom-vertical-line"></div>
-								</div>
-							</a>
-						</div>
-						<div role="listitem" class="w-dyn-item">
-							<a
-								style='background-image:url("https://assets-global.website-files.com/6364e2710bb372fbb357f912/6364e463eb8de501b4ca77f4_abstract-figure.jpg")'
-								href="/project/x-project-website"
-								class="projects-item w-inline-block"
-							>
-								<div class="projects-overlay">
-									<div class="projects-title">X-Project Website</div>
-									<div class="projects-top-horizontal-line"></div>
-									<div class="projects-top-vertical-line"></div>
-									<div class="projects-bottom-horizontal-line"></div>
-									<div class="projects-bottom-vertical-line"></div>
-								</div>
-							</a>
-						</div>
+						{
+							posts.map((post) => {
+								return (
+									<div role="listitem" class="w-dyn-item">
+										<a
+											data-w-id="450459d4-86eb-2e07-9d58-3bc8cf7f4b64"
+											style="`background-image:url(${post.data.heroImage})`"
+											href={`/project/${post.slug}/`}
+											class="projects-item w-inline-block"
+										>
+											<div
+												data-w-id="450459d4-86eb-2e07-9d58-3bc8cf7f4b65"
+												class="projects-overlay"
+											>
+												<div class="projects-title" style="">
+													{post.data.title}
+												</div>
+												<div
+													data-w-id="450459d4-86eb-2e07-9d58-3bc8cf7f4b67"
+													class="projects-top-horizontal-line"
+												/>
+												<div
+													data-w-id="450459d4-86eb-2e07-9d58-3bc8cf7f4b68"
+													class="projects-top-vertical-line"
+												/>
+												<div
+													data-w-id="450459d4-86eb-2e07-9d58-3bc8cf7f4b69"
+													class="projects-bottom-horizontal-line"
+												/>
+												<div
+													data-w-id="450459d4-86eb-2e07-9d58-3bc8cf7f4b6a"
+													class="projects-bottom-vertical-line"
+												/>
+											</div>
+										</a>
+									</div>
+								);
+							})
+						}
 					</div>
-				</div>
-				<div class="space-large"></div>
-				<div class="projects-button-wrapper">
-					<a href="/projects" class="button white-icon w-inline-block">
-						<div>See All Projects</div>
-						<img
-							src="https://assets.website-files.com/634d6064d1c6401d462f6757/635ba51862dc31078b9aec9b_arrow-white.svg"
-							loading="lazy"
-							alt=""
-							class="icon-small"
-						/>
-					</a>
 				</div>
 			</div>
 		</div>
 	</section>
+
 	<section class="section-testimonials">
 		<div class="padding-global">
 			<div class="container-large">
@@ -553,6 +464,87 @@ import bill_johnson_pic from "../assets/icons/bill-jhonson.webp";
 	<section class="section-blog">
 		<div class="padding-global">
 			<div class="container-large">
+				<div class="padding-section-medium">
+					<div class="container-small">
+						<div class="text-align-center">
+							<div class="caption">blog</div><div class="space-small"></div><h2
+								class="text-color-black"
+							>
+								My Articles
+							</h2><div class="space-small"></div><div class="text-color-grey">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Suspendisse varius enim in eros elementum tristique. Duis
+								cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+								commodo diam libero vitae erat.
+							</div>
+						</div>
+					</div><div class="space-large"></div><div class="container-large">
+						<div class="w-dyn-list">
+							<div role="list" class="blog-grid w-dyn-items">
+								{
+									blogPosts.map((post) => {
+										return (
+											<div role="listitem" class="w-dyn-item">
+												<a
+													href={`/blog/${post.slug}/`}
+													class="blog-item w-inline-block"
+												>
+													<div class="blog-item-image-wrapper">
+														<img
+															transition:name={`post-image-${post.id}`}
+															alt={post.data.title}
+															loading="lazy"
+															src={post.data.heroImage}
+															class="image"
+														/>
+													</div>
+													<div class="blog-item-content">
+														<div
+															class="text-size-small text-color-grey"
+															transition:name={`post-name-${post.id}`}
+														>
+															{post.data.pubDate}
+														</div>
+														<h3
+															class="heading-style-h5 text-color-black"
+															transition:name={`post-title-${post.id}`}
+														>
+															{post.data.title}
+														</h3>
+														<div
+															class="text-color-grey"
+															transition:name={`post-description-${post.id}`}
+														>
+															{post.data.description}
+														</div>
+														<div
+															class="button icon"
+															style="color: rgb(12, 17, 31);"
+														>
+															<div>Read more</div>
+															<img
+																class="icon-small"
+																loading="lazy"
+																src={right_arrow.src}
+																alt="Right Arrow"
+															/>
+														</div>
+													</div>
+												</a>
+											</div>
+										);
+									})
+								}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- <section class="section-blog">
+		<div class="padding-global">
+			<div class="container-large">
 				<div class="padding-section-large">
 					<div class="container-small">
 						<div class="text-align-center">
@@ -703,5 +695,5 @@ import bill_johnson_pic from "../assets/icons/bill-jhonson.webp";
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 </MainLayout>
