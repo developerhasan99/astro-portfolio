@@ -27,7 +27,7 @@ const posts = await getCollection("project");
 									<div role="listitem" class="w-dyn-item">
 										<a
 											data-w-id="450459d4-86eb-2e07-9d58-3bc8cf7f4b64"
-											style="`background-image:url(${post.data.heroImage})`"
+											style={`background-image:url('${post.data.heroImage}')`}
 											href={`/project/${post.slug}/`}
 											class="projects-item w-inline-block"
 										>

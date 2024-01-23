@@ -6,6 +6,9 @@ import rob_sandars_pic from "../assets/icons/rob-sandars.webp";
 import david_dav_pic from "../assets/icons/david-dav.webp";
 import bill_johnson_pic from "../assets/icons/bill-jhonson.webp";
 import right_arrow from "../assets/icons/arrow-right.svg";
+import stars from "../assets/star.svg";
+import rafal_pic from "../assets/rafal.jpg";
+import shaine_pic from "../assets/shaine.jpg";
 import { getCollection } from "astro:content";
 const posts = await getCollection("project");
 const blogPosts = await getCollection("blog");
@@ -46,6 +49,7 @@ const blogPosts = await getCollection("blog");
 			</div>
 		</div>
 	</section>
+
 	<section id="about" class="section-home-about">
 		<div class="padding-global">
 			<div class="container-large">
@@ -84,6 +88,7 @@ const blogPosts = await getCollection("blog");
 			</div>
 		</div>
 	</section>
+
 	<section id="Services" class="section-services">
 		<div class="padding-global">
 			<div class="container-large">
@@ -222,7 +227,7 @@ const blogPosts = await getCollection("blog");
 									<div role="listitem" class="w-dyn-item">
 										<a
 											data-w-id="450459d4-86eb-2e07-9d58-3bc8cf7f4b64"
-											style="`background-image:url(${post.data.heroImage})`"
+											style={`background-image:url('${post.data.heroImage}')`}
 											href={`/project/${post.slug}/`}
 											class="projects-item w-inline-block"
 										>
@@ -280,11 +285,7 @@ const blogPosts = await getCollection("blog");
 					<div class="testimonials-component">
 						<div class="testimonials-row">
 							<div class="testimonials-wrapper" data-aos="fade-up">
-								<img
-									src="https://assets.website-files.com/634d6064d1c6401d462f6757/635ba519e453a6f3ca77bf49_stars.svg"
-									loading="lazy"
-									alt=""
-								/>
+								<img src={stars.src} loading="lazy" alt="" />
 								<div>
 									“Mehedi did an excellent job on my WordPress project,
 									showcasing his skills in both PHP and WordPress. His expertise
@@ -310,11 +311,7 @@ const blogPosts = await getCollection("blog");
 							</div>
 
 							<div class="testimonials-wrapper" data-aos="fade-up">
-								<img
-									src="https://assets.website-files.com/634d6064d1c6401d462f6757/635ba519e453a6f3ca77bf49_stars.svg"
-									loading="lazy"
-									alt=""
-								/>
+								<img src={stars.src} loading="lazy" alt="" />
 								<div>
 									“Hands down, one of the best freelancers I have worked with.
 									Highly recommend to anyone.”
@@ -339,11 +336,7 @@ const blogPosts = await getCollection("blog");
 						</div>
 						<div class="testimonials-row">
 							<div class="testimonials-wrapper" data-aos="fade-up">
-								<img
-									src="https://assets.website-files.com/634d6064d1c6401d462f6757/635ba519e453a6f3ca77bf49_stars.svg"
-									loading="lazy"
-									alt=""
-								/>
+								<img src={stars.src} loading="lazy" alt="" />
 								<div>
 									“I am delighted to share my fantastic experience working with
 									Mehedi for mobile edits. His willingness to go the extra mile
@@ -355,7 +348,7 @@ const blogPosts = await getCollection("blog");
 								<div class="testimonials-item-grid">
 									<div class="testimonials-image-wrapper">
 										<img
-											src="https://assets.website-files.com/634d6064d1c6401d462f6757/635bf57e78821955e28f861a_Avatar%205.jpg"
+											src={shaine_pic.src}
 											loading="lazy"
 											alt=""
 											class="image"
@@ -370,11 +363,7 @@ const blogPosts = await getCollection("blog");
 								</div>
 							</div>
 							<div class="testimonials-wrapper" data-aos="fade-up">
-								<img
-									src="https://assets.website-files.com/634d6064d1c6401d462f6757/635ba519e453a6f3ca77bf49_stars.svg"
-									loading="lazy"
-									alt=""
-								/>
+								<img src={stars.src} loading="lazy" alt="" />
 								<div>
 									“Perfect work and communication. I recommend work with this
 									Upwork user”
@@ -382,7 +371,7 @@ const blogPosts = await getCollection("blog");
 								<div class="testimonials-item-grid">
 									<div class="testimonials-image-wrapper">
 										<img
-											src="https://assets.website-files.com/634d6064d1c6401d462f6757/635bf57e96dddfea56ac8d35_Avatar%206.jpg"
+											src={rafal_pic.src}
 											loading="lazy"
 											alt=""
 											class="image"
@@ -400,11 +389,7 @@ const blogPosts = await getCollection("blog");
 
 						<div class="testimonials-row">
 							<div class="testimonials-wrapper" data-aos="fade-up">
-								<img
-									src="https://assets.website-files.com/634d6064d1c6401d462f6757/635ba519e453a6f3ca77bf49_stars.svg"
-									loading="lazy"
-									alt=""
-								/>
+								<img src={stars.src} loading="lazy" alt="" />
 								<div>
 									“I had the pleasure of working with Mehedi recently, and I
 									must say, it was an absolute delight! Mehedi's communication
@@ -413,7 +398,7 @@ const blogPosts = await getCollection("blog");
 								<div class="testimonials-item-grid">
 									<div class="testimonials-image-wrapper">
 										<img
-											src="https://assets.website-files.com/634d6064d1c6401d462f6757/635bf57e96dddfea56ac8d35_Avatar%206.jpg"
+											src={rafal_pic.src}
 											loading="lazy"
 											alt=""
 											class="image"
@@ -428,11 +413,7 @@ const blogPosts = await getCollection("blog");
 								</div>
 							</div>
 							<div class="testimonials-wrapper" data-aos="fade-up">
-								<img
-									src="https://assets.website-files.com/634d6064d1c6401d462f6757/635ba519e453a6f3ca77bf49_stars.svg"
-									loading="lazy"
-									alt=""
-								/>
+								<img src={stars.src} loading="lazy" alt="" />
 								<div>
 									“Mehedi has been amazing. This is the 3rd project that we've
 									worked together on and he has delivered every time. Highly
@@ -461,6 +442,7 @@ const blogPosts = await getCollection("blog");
 			</div>
 		</div>
 	</section>
+
 	<section class="section-blog">
 		<div class="padding-global">
 			<div class="container-large">
@@ -542,158 +524,4 @@ const blogPosts = await getCollection("blog");
 			</div>
 		</div>
 	</section>
-	<!-- <section class="section-blog">
-		<div class="padding-global">
-			<div class="container-large">
-				<div class="padding-section-large">
-					<div class="container-small">
-						<div class="text-align-center">
-							<div class="caption">blog</div>
-							<div class="space-small"></div>
-							<h2 class="text-color-black">My Lastest Articles</h2>
-							<div class="space-small"></div>
-							<div class="text-color-grey">
-								Stay updated with my latest insights and perspectives. Dive into
-								thought-provoking articles that explore trends, tips, and
-								innovation across disciplines.
-							</div>
-						</div>
-					</div>
-					<div class="space-large"></div>
-					<div class="container-large">
-						<div class="w-dyn-list">
-							<div role="list" class="blog-grid w-dyn-items">
-								<div role="listitem" class="w-dyn-item">
-									<a
-										href="/post/how-discord-app-changed-my-way-of-communicate-with-others"
-										class="blog-item w-inline-block"
-									>
-										<div class="blog-item-image-wrapper">
-											<img
-												loading="lazy"
-												alt=""
-												src="https://assets.website-files.com/6364e2710bb372fbb357f912/6364e868b76515683e6c1c50_discord-logo-3d.jpg"
-												sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 45vw, (max-width: 1919px) 30vw, 448px"
-												srcset="https://assets.website-files.com/6364e2710bb372fbb357f912/6364e868b76515683e6c1c50_discord-logo-3d-p-500.jpg 500w, https://assets.website-files.com/6364e2710bb372fbb357f912/6364e868b76515683e6c1c50_discord-logo-3d-p-800.jpg 800w, https://assets.website-files.com/6364e2710bb372fbb357f912/6364e868b76515683e6c1c50_discord-logo-3d-p-1080.jpg 1080w, https://assets.website-files.com/6364e2710bb372fbb357f912/6364e868b76515683e6c1c50_discord-logo-3d-p-1600.jpg 1600w, https://assets.website-files.com/6364e2710bb372fbb357f912/6364e868b76515683e6c1c50_discord-logo-3d.jpg 1920w"
-												class="image"
-											/>
-										</div>
-										<div class="blog-item-content">
-											<div class="text-size-small text-color-grey">
-												November 14, 2022
-											</div>
-											<h3 class="heading-style-h5 text-color-black">
-												How Discord app changed my way of communicate with
-												others
-											</h3>
-											<div class="text-color-grey">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-												Praesent ipsum arcu, tempor semper vulputate ut,
-												volutpat eget ex.
-											</div>
-											<div class="button icon" style="color: rgb(12, 17, 31);">
-												<div>Read more</div>
-												<img
-													src="https://assets.website-files.com/634d6064d1c6401d462f6757/635ba5189614b61860455e35_arrow-right.svg"
-													loading="lazy"
-													alt=""
-													class="icon-small"
-													style="transform: translate3d(0rem, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-												/>
-											</div>
-										</div>
-									</a>
-								</div>
-								<div role="listitem" class="w-dyn-item">
-									<a
-										href="/post/the-apps-i-love-the-most-for-design-and-productivity"
-										class="blog-item w-inline-block"
-									>
-										<div class="blog-item-image-wrapper">
-											<img
-												loading="lazy"
-												alt=""
-												src="https://assets.website-files.com/6364e2710bb372fbb357f912/6364e8628732872a39069a1f_laptop-blue.jpg"
-												sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 45vw, (max-width: 1919px) 30vw, 448px"
-												srcset="https://assets.website-files.com/6364e2710bb372fbb357f912/6364e8628732872a39069a1f_laptop-blue-p-500.jpg 500w, https://assets.website-files.com/6364e2710bb372fbb357f912/6364e8628732872a39069a1f_laptop-blue-p-800.jpg 800w, https://assets.website-files.com/6364e2710bb372fbb357f912/6364e8628732872a39069a1f_laptop-blue-p-1080.jpg 1080w, https://assets.website-files.com/6364e2710bb372fbb357f912/6364e8628732872a39069a1f_laptop-blue-p-1600.jpg 1600w, https://assets.website-files.com/6364e2710bb372fbb357f912/6364e8628732872a39069a1f_laptop-blue.jpg 1920w"
-												class="image"
-											/>
-										</div>
-										<div class="blog-item-content">
-											<div class="text-size-small text-color-grey">
-												October 25, 2022
-											</div>
-											<h3 class="heading-style-h5 text-color-black">
-												The apps I love the most for design and productivity
-											</h3>
-											<div class="text-color-grey">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-												Praesent ipsum arcu, tempor semper vulputate ut,
-												volutpat eget ex.
-											</div>
-											<div class="button icon" style="color: rgb(12, 17, 31);">
-												<div>Read more</div>
-												<img
-													src="https://assets.website-files.com/634d6064d1c6401d462f6757/635ba5189614b61860455e35_arrow-right.svg"
-													loading="lazy"
-													alt=""
-													class="icon-small"
-													style="transform: translate3d(0rem, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-												/>
-											</div>
-										</div>
-									</a>
-								</div>
-								<div role="listitem" class="w-dyn-item">
-									<a
-										href="/post/how-mobile-apps-help-in-digital-transformation-of-businesses"
-										class="blog-item w-inline-block"
-									>
-										<div class="blog-item-image-wrapper">
-											<img
-												loading="lazy"
-												alt=""
-												src="https://assets.website-files.com/6364e2710bb372fbb357f912/6364e8582a3c8284d65654da_mobile-blue.jpg"
-												sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 45vw, (max-width: 1919px) 30vw, 448px"
-												srcset="https://assets.website-files.com/6364e2710bb372fbb357f912/6364e8582a3c8284d65654da_mobile-blue-p-500.jpg 500w, https://assets.website-files.com/6364e2710bb372fbb357f912/6364e8582a3c8284d65654da_mobile-blue-p-800.jpg 800w, https://assets.website-files.com/6364e2710bb372fbb357f912/6364e8582a3c8284d65654da_mobile-blue-p-1080.jpg 1080w, https://assets.website-files.com/6364e2710bb372fbb357f912/6364e8582a3c8284d65654da_mobile-blue-p-1600.jpg 1600w, https://assets.website-files.com/6364e2710bb372fbb357f912/6364e8582a3c8284d65654da_mobile-blue.jpg 1920w"
-												class="image"
-											/>
-										</div>
-										<div class="blog-item-content">
-											<div class="text-size-small text-color-grey">
-												September 28, 2022
-											</div>
-											<h3 class="heading-style-h5 text-color-black">
-												How mobile apps help in Digital Transformation of
-												Businesses
-											</h3>
-											<div class="text-color-grey">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-												Praesent ipsum arcu, tempor semper vulputate ut,
-												volutpat eget ex.
-											</div>
-											<div class="button icon" style="color: rgb(12, 17, 31);">
-												<div>Read more</div>
-												<img
-													src="https://assets.website-files.com/634d6064d1c6401d462f6757/635ba5189614b61860455e35_arrow-right.svg"
-													loading="lazy"
-													alt=""
-													class="icon-small"
-													style="transform: translate3d(0rem, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-												/>
-											</div>
-										</div>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="space-large"></div>
-					<div class="blog-button-wrapper">
-						<a href="/blog" class="button w-button">See All Articles</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> -->
 </MainLayout>
