@@ -8,58 +8,60 @@ const posts = await getCollection("project");
 <MainLayout>
 	<section class="section-projects">
 		<div class="padding-global">
-			<div class="padding-section-medium">
-				<div class="container-small">
-					<div class="text-align-center">
-						<h2>My Projects</h2><div class="space-small"></div><div
-							class="text-color-grey-400"
-						>
-							Dynamic projects, blending creativity and functionality. Explore
-							my portfolio for a glimpse into versatile designs that leave a
-							lasting impression.
+			<div class="container-large">
+				<div class="padding-section-medium">
+					<div class="container-small">
+						<div class="text-align-center">
+							<h2>My Projects</h2><div class="space-small"></div><div
+								class="text-color-grey-400"
+							>
+								Dynamic projects, blending creativity and functionality. Explore
+								my portfolio for a glimpse into versatile designs that leave a
+								lasting impression.
+							</div>
 						</div>
-					</div>
-				</div><div class="space-large"></div><div class="w-dyn-list">
-					<div role="list" class="projects-component w-dyn-items">
-						{
-							posts.map((post) => {
-								return (
-									<div role="listitem" class="w-dyn-item">
-										<a
-											data-w-id="450459d4-86eb-2e07-9d58-3bc8cf7f4b64"
-											style={`background-image:url('${post.data.heroImage}')`}
-											href={`/project/${post.slug}/`}
-											class="projects-item w-inline-block"
-										>
-											<div
-												data-w-id="450459d4-86eb-2e07-9d58-3bc8cf7f4b65"
-												class="projects-overlay"
+					</div><div class="space-large"></div><div class="w-dyn-list">
+						<div role="list" class="projects-component w-dyn-items">
+							{
+								posts.map((post) => {
+									return (
+										<div role="listitem" class="w-dyn-item">
+											<a
+												data-w-id="450459d4-86eb-2e07-9d58-3bc8cf7f4b64"
+												style={`background-image:url('${post.data.heroImage}')`}
+												href={`/project/${post.slug}/`}
+												class="projects-item w-inline-block"
 											>
-												<div class="projects-title" style="">
-													{post.data.title}
+												<div
+													data-w-id="450459d4-86eb-2e07-9d58-3bc8cf7f4b65"
+													class="projects-overlay"
+												>
+													<div class="projects-title" style="">
+														{post.data.title}
+													</div>
+													<div
+														data-w-id="450459d4-86eb-2e07-9d58-3bc8cf7f4b67"
+														class="projects-top-horizontal-line"
+													/>
+													<div
+														data-w-id="450459d4-86eb-2e07-9d58-3bc8cf7f4b68"
+														class="projects-top-vertical-line"
+													/>
+													<div
+														data-w-id="450459d4-86eb-2e07-9d58-3bc8cf7f4b69"
+														class="projects-bottom-horizontal-line"
+													/>
+													<div
+														data-w-id="450459d4-86eb-2e07-9d58-3bc8cf7f4b6a"
+														class="projects-bottom-vertical-line"
+													/>
 												</div>
-												<div
-													data-w-id="450459d4-86eb-2e07-9d58-3bc8cf7f4b67"
-													class="projects-top-horizontal-line"
-												/>
-												<div
-													data-w-id="450459d4-86eb-2e07-9d58-3bc8cf7f4b68"
-													class="projects-top-vertical-line"
-												/>
-												<div
-													data-w-id="450459d4-86eb-2e07-9d58-3bc8cf7f4b69"
-													class="projects-bottom-horizontal-line"
-												/>
-												<div
-													data-w-id="450459d4-86eb-2e07-9d58-3bc8cf7f4b6a"
-													class="projects-bottom-vertical-line"
-												/>
-											</div>
-										</a>
-									</div>
-								);
-							})
-						}
+											</a>
+										</div>
+									);
+								})
+							}
+						</div>
 					</div>
 				</div>
 			</div>
