@@ -7,13 +7,11 @@ import "@fontsource/ibm-plex-sans/500.css";
 import "@fontsource/ibm-plex-sans/600.css";
 // import Main Style
 import { ViewTransitions } from "astro:transitions";
+import Navbar from "../partials/Navbar.astro";
+import Footer from "../partials/Footer.astro";
 import "../assets/style.css";
 
-import white_logo from "../assets/logo-white.svg";
-// Social Icons
-import upwork_icon from "../assets/icons/upwork.svg";
-import facebook_icon from "../assets/icons/facebook.svg";
-import linkedin_icon from "../assets/icons/linkedin.svg";
+import absolute_circle from "../assets/absolute-circle.svg";
 ---
 
 <html>
@@ -26,11 +24,7 @@ import linkedin_icon from "../assets/icons/linkedin.svg";
 	<body>
 		<div class="page-wrapper">
 			<div class="absolute-circle">
-				<img
-					src="https://assets.website-files.com/634d6064d1c6401d462f6757/636cd086a8ca6a18765d84d4_absolute-circle.svg"
-					loading="lazy"
-					alt=""
-				/>
+				<img src={absolute_circle.src} loading="lazy" alt="Absolute Circle" />
 			</div>
 			<div class="lines-wrapper">
 				<div class="absolute-line"></div>
@@ -38,66 +32,7 @@ import linkedin_icon from "../assets/icons/linkedin.svg";
 				<div class="absolute-line"></div>
 				<div class="absolute-line right-line"></div>
 			</div>
-			<div role="banner" class="nav-component w-nav">
-				<div class="padding-global">
-					<div class="nav-container">
-						<a
-							href="/"
-							aria-current="page"
-							class="nav-logo-link w-inline-block w--current"
-						>
-							<img
-								src={white_logo.src}
-								loading="lazy"
-								alt="Developer Hasan"
-								class="nav-logo"
-							/>
-						</a>
-						<nav role="navigation" class="nav-menu w-nav-menu">
-							<a href="/projects" class="nav-link w-nav-link">Work</a>
-							<a href="/#Services" class="nav-link w-nav-link">Services</a>
-							<a href="/about" class="nav-link w-nav-link">About</a>
-							<div class="nav-social-links">
-								<a
-									href="https://www.upwork.com"
-									class="nav-social-link w-inline-block"
-								>
-									<img src={upwork_icon.src} loading="lazy" alt="Upwork" />
-								</a>
-								<a
-									href="https://www.facebook.com"
-									class="nav-social-link w-inline-block"
-								>
-									<img src={facebook_icon.src} loading="lazy" alt="Facebook" />
-								</a>
-								<a
-									href="https://www.linkedin.com"
-									class="nav-social-link w-inline-block"
-								>
-									<img src={linkedin_icon.src} loading="lazy" alt="Linkedin" />
-								</a>
-							</div>
-						</nav>
-						<div
-							class="nav-menu-button w-nav-button"
-							style="-webkit-user-select: text;"
-							aria-label="menu"
-							role="button"
-							tabindex="0"
-							aria-controls="w-nav-overlay-0"
-							aria-haspopup="menu"
-							aria-expanded="false"
-						>
-							<div class="menu-icon">
-								<div class="menu-icon-line-top"></div>
-								<div class="menu-icon-line-middle"></div>
-								<div class="menu-icon-line-bottom"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
-			</div>
+			<Navbar />
 			<main class="main-wrapper">
 				<slot />
 				<section class="section-cta">
@@ -126,68 +61,7 @@ import linkedin_icon from "../assets/icons/linkedin.svg";
 					</div>
 				</section>
 			</main>
-			<footer class="footer-component">
-				<div class="padding-global">
-					<div class="container-large">
-						<div class="padding-section-small">
-							<div class="footer-top">
-								<a
-									href="/"
-									aria-current="page"
-									class="footer-logo-link w-inline-block w--current"
-								>
-									<img
-										src={white_logo.src}
-										loading="lazy"
-										alt="Developer Hasan"
-										class="nav-logo"
-									/>
-								</a>
-								<div class="text-color-grey-400">
-									Explore my portfolio, connect for collaboration. Stay updated
-									with articles. Follow on social media for inspiration. Let's
-									build something extraordinary!
-								</div>
-								<div class="footer-social-links">
-									<a
-										href="https://www.upwork.com"
-										class="nav-social-link w-inline-block"
-									>
-										<img src={upwork_icon.src} loading="lazy" alt="Upwork" />
-									</a>
-									<a
-										href="https://www.facebook.com"
-										class="nav-social-link w-inline-block"
-									>
-										<img
-											src={facebook_icon.src}
-											loading="lazy"
-											alt="Facebook"
-										/>
-									</a>
-									<a
-										href="https://www.linkedin.com"
-										class="nav-social-link w-inline-block"
-									>
-										<img
-											src={linkedin_icon.src}
-											loading="lazy"
-											alt="Linkedin"
-										/>
-									</a>
-								</div>
-								<div class="footer-nav-menu">
-									<a href="/projects" class="footer-link">Work</a>
-									<a href="#Services" class="footer-link">Services</a>
-									<a href="/about" class="footer-link">About</a>
-									<a href="/blog" class="footer-link">Blog</a>
-									<a href="/contact" class="footer-link">Contact</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</footer>
+			<Footer />
 		</div>
 
 		<script src="../js/onfocus.js"></script>

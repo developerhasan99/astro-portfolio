@@ -1,0 +1,61 @@
+---
+import white_logo from "../assets/logo-white.svg";
+// Social Icons
+import upwork_icon from "../assets/icons/upwork.svg";
+import facebook_icon from "../assets/icons/facebook.svg";
+import linkedin_icon from "../assets/icons/linkedin.svg";
+---
+
+<footer class="footer-component">
+	<div class="padding-global">
+		<div class="container-large">
+			<div class="padding-section-small">
+				<div class="footer-top">
+					<a
+						href="/"
+						aria-current="page"
+						class="footer-logo-link w-inline-block w--current"
+					>
+						<img
+							src={white_logo.src}
+							loading="lazy"
+							alt="Developer Hasan"
+							class="nav-logo"
+						/>
+					</a>
+					<div class="text-color-grey-400">
+						Explore my portfolio, connect for collaboration. Stay updated with
+						articles. Follow on social media for inspiration. Let's build
+						something extraordinary!
+					</div>
+					<div class="footer-social-links">
+						<a
+							href="https://www.upwork.com"
+							class="nav-social-link w-inline-block"
+						>
+							<img src={upwork_icon.src} loading="lazy" alt="Upwork" />
+						</a>
+						<a
+							href="https://www.facebook.com"
+							class="nav-social-link w-inline-block"
+						>
+							<img src={facebook_icon.src} loading="lazy" alt="Facebook" />
+						</a>
+						<a
+							href="https://www.linkedin.com"
+							class="nav-social-link w-inline-block"
+						>
+							<img src={linkedin_icon.src} loading="lazy" alt="Linkedin" />
+						</a>
+					</div>
+					<div class="footer-nav-menu">
+						<a href="/#about" class="footer-link">About</a>
+						<a href="/#Services" class="footer-link">Services</a>
+						<a href="/project" class="footer-link">Work</a>
+						<a href="/blog" class="footer-link">Blog</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>

@@ -34,22 +34,17 @@ const { Content } = await post.render();
 							</div><div class="text-color-grey-400">
 								{post.data.description}
 							</div><div class="space-medium"></div><a
-								href="/projects"
+								href="/project"
 								class="button white-icon w-inline-block"
-								><img
-									src="https://assets.website-files.com/634d6064d1c6401d462f6757/63713c580d7d56d05f9d3400_chevron-white-left.svg"
-									loading="lazy"
-									alt=""
-									class="icon-small"
-								/><div>Back to Projects</div></a
+							>
+								&lAarr;
+								<div>Back to Projects</div></a
 							>
 						</div><div class="project-image-wrapper">
 							<img
 								src={post.data.heroImage}
 								loading="lazy"
 								alt=""
-								sizes="(max-width: 479px) 93vw, (max-width: 767px) 44vw, (max-width: 991px) 43vw, (max-width: 1919px) 45vw, 832px"
-								srcset="https://assets.website-files.com/6364e2710bb372fbb357f912/6364e2ded3daac2e14977780_joystick-blue-p-500.jpg 500w, https://assets.website-files.com/6364e2710bb372fbb357f912/6364e2ded3daac2e14977780_joystick-blue-p-800.jpg 800w, https://assets.website-files.com/6364e2710bb372fbb357f912/6364e2ded3daac2e14977780_joystick-blue-p-1080.jpg 1080w, https://assets.website-files.com/6364e2710bb372fbb357f912/6364e2ded3daac2e14977780_joystick-blue-p-1600.jpg 1600w, https://assets.website-files.com/6364e2710bb372fbb357f912/6364e2ded3daac2e14977780_joystick-blue.jpg 1920w"
 								class="image"
 							/>
 						</div>
@@ -84,185 +79,7 @@ const { Content } = await post.render();
 							>
 						</div>
 						<div class="project-body-content">
-							<div id="Overview" class="">
-								<div class="rich-text w-richtext">
-									<h4>Overview</h4>
-									<p>
-										{post.data.overView}
-									</p>
-								</div>
-							</div>
-							<div class="project-body-wrapper">
-								<div class="rich-text w-richtext">
-									<h5>Role:</h5>
-									<p>
-										{post.data.role}
-									</p>
-								</div>
-								<div class="rich-text w-richtext">
-									<h5>Tools:</h5>
-									<ul role="list">
-										{post.data.toolsList.map((list) => <li>{list.item}</li>)}
-									</ul>
-								</div>
-							</div>
-							<div id="Problem">
-								<div class="rich-text margin-small w-richtext">
-									<h4>Problem</h4>
-									<p>
-										{post.data.problem}
-									</p>
-								</div>
-							</div>
-							<div id="Solution">
-								<div class="rich-text margin-small w-richtext">
-									<h4>Solution</h4>
-									<p>
-										{post.data.solution}
-									</p>
-								</div>
-							</div>
-							<div id="UXResearch">
-								<div class="rich-text margin-small w-richtext">
-									<h4>UX Research</h4>
-									<p>
-										{post.data.uxResearch}
-									</p>
-								</div>
-							</div>
-							<div id="Design">
-								<div class="rich-text margin-small w-richtext">
-									<h4>Design</h4><p>
-										{post.data.design}
-									</p>
-									<figure
-										class="w-richtext-figure-type-image w-richtext-align-fullwidth"
-										style="max-width:1600pxpx"
-									>
-										<div>
-											<img src={post.data.designImage} loading="lazy" alt="" />
-										</div>
-									</figure>
-								</div>
-							</div>
-							<div id="Development">
-								<div class="rich-text margin-small w-richtext">
-									<h4>Development</h4><p>
-										{post.data.development}
-									</p>
-								</div>
-							</div>
-							<div class="project-gallery">
-								<div class="project-gallery-collection w-dyn-list"></div>
-							</div>
-							<div class="flex-item">
-								<div class="grid-item">
-									<div role="listitem" class="w-dyn-item w-dyn-repeater-item">
-										<a
-											href="#"
-											class="project-gallery-lightbox w-inline-block w-lightbox"
-											aria-label="open lightbox"
-											aria-haspopup="dialog"
-										>
-											<img
-												src={post.data.developmentImage1}
-												loading="lazy"
-												alt=""
-												sizes="(max-width: 479px) 45vw, (max-width: 767px) 23vw, (max-width: 991px) 21vw, (max-width: 1919px) 14vw, 183px"
-												srcset="https://assets.website-files.com/6364e2710bb372fbb357f912/636516b5927fbc9ba3260e9c_mockup%2003-p-500.jpg 500w, https://assets.website-files.com/6364e2710bb372fbb357f912/636516b5927fbc9ba3260e9c_mockup%2003-p-800.jpg 800w, https://assets.website-files.com/6364e2710bb372fbb357f912/636516b5927fbc9ba3260e9c_mockup%2003-p-1080.jpg 1080w, https://assets.website-files.com/6364e2710bb372fbb357f912/636516b5927fbc9ba3260e9c_mockup%2003.jpg 1600w"
-												class="image"
-												style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-											/>
-										</a>
-									</div>
-									<div role="listitem" class="w-dyn-item w-dyn-repeater-item">
-										<a
-											href="#"
-											class="project-gallery-lightbox w-inline-block w-lightbox"
-											aria-label="open lightbox"
-											aria-haspopup="dialog"
-										>
-											<img
-												src={post.data.developmentImage2}
-												loading="lazy"
-												alt=""
-												sizes="(max-width: 479px) 45vw, (max-width: 767px) 23vw, (max-width: 991px) 21vw, (max-width: 1919px) 14vw, 183px"
-												srcset="https://assets.website-files.com/6364e2710bb372fbb357f912/636516b5927fbc9ba3260e9c_mockup%2003-p-500.jpg 500w, https://assets.website-files.com/6364e2710bb372fbb357f912/636516b5927fbc9ba3260e9c_mockup%2003-p-800.jpg 800w, https://assets.website-files.com/6364e2710bb372fbb357f912/636516b5927fbc9ba3260e9c_mockup%2003-p-1080.jpg 1080w, https://assets.website-files.com/6364e2710bb372fbb357f912/636516b5927fbc9ba3260e9c_mockup%2003.jpg 1600w"
-												class="image"
-												style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-											/>
-										</a>
-									</div>
-
-									<div role="listitem" class="w-dyn-item w-dyn-repeater-item">
-										<a
-											href="#"
-											class="project-gallery-lightbox w-inline-block w-lightbox"
-											aria-label="open lightbox"
-											aria-haspopup="dialog"
-										>
-											<img
-												src={post.data.developmentImage3}
-												loading="lazy"
-												alt=""
-												sizes="(max-width: 479px) 45vw, (max-width: 767px) 23vw, (max-width: 991px) 21vw, (max-width: 1919px) 14vw, 183px"
-												srcset="https://assets.website-files.com/6364e2710bb372fbb357f912/636516b54443c4607e73f0fd_mockup%2004-p-500.jpg 500w, https://assets.website-files.com/6364e2710bb372fbb357f912/636516b54443c4607e73f0fd_mockup%2004-p-800.jpg 800w, https://assets.website-files.com/6364e2710bb372fbb357f912/636516b54443c4607e73f0fd_mockup%2004-p-1080.jpg 1080w, https://assets.website-files.com/6364e2710bb372fbb357f912/636516b54443c4607e73f0fd_mockup%2004.jpg 1600w"
-												class="image"
-												style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-											/>
-										</a>
-									</div>
-									<div role="listitem" class="w-dyn-item w-dyn-repeater-item">
-										<a
-											href="#"
-											class="project-gallery-lightbox w-inline-block w-lightbox"
-											aria-label="open lightbox"
-											aria-haspopup="dialog"
-										>
-											<img
-												src={post.data.developmentImage4}
-												loading="lazy"
-												alt=""
-												sizes="(max-width: 479px) 45vw, (max-width: 767px) 23vw, (max-width: 991px) 21vw, (max-width: 1919px) 14vw, 183px"
-												srcset="https://assets.website-files.com/6364e2710bb372fbb357f912/636516b5d3daac59d69ae756_mockup%2005-p-500.jpg 500w, https://assets.website-files.com/6364e2710bb372fbb357f912/636516b5d3daac59d69ae756_mockup%2005-p-800.jpg 800w, https://assets.website-files.com/6364e2710bb372fbb357f912/636516b5d3daac59d69ae756_mockup%2005-p-1080.jpg 1080w, https://assets.website-files.com/6364e2710bb372fbb357f912/636516b5d3daac59d69ae756_mockup%2005.jpg 1600w"
-												class="image"
-												style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-											/>
-										</a>
-									</div>
-								</div>
-
-								<div class="project-gallery-image">
-									<a
-										href="#"
-										class="project-gallery-lightbox w-inline-block w-lightbox"
-										aria-label="open lightbox"
-										aria-haspopup="dialog"
-									>
-										<img
-											src={post.data.developmentBigImage}
-											loading="lazy"
-											alt=""
-											sizes="(max-width: 479px) 93vw, (max-width: 767px) 47vw, (max-width: 991px) 44vw, (max-width: 1919px) 30vw, 378px"
-											srcset="https://assets.website-files.com/6364e2710bb372fbb357f912/636516b5d010ce58ba8f625a_mockup%2002-p-500.jpg 500w, https://assets.website-files.com/6364e2710bb372fbb357f912/636516b5d010ce58ba8f625a_mockup%2002-p-800.jpg 800w, https://assets.website-files.com/6364e2710bb372fbb357f912/636516b5d010ce58ba8f625a_mockup%2002-p-1080.jpg 1080w, https://assets.website-files.com/6364e2710bb372fbb357f912/636516b5d010ce58ba8f625a_mockup%2002.jpg 1600w"
-											class="image"
-											style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-										/>
-									</a>
-									<a
-										href="#nav"
-										data-w-id="00ec4037-e123-dcdc-6366-4486f7cf6da7"
-										class="back-to-top w-inline-block"
-										style="will-change: transform; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-										><img
-											src="https://assets.website-files.com/634d6064d1c6401d462f6757/635ba5189614b61860455e35_arrow-right.svg"
-											loading="lazy"
-											alt=""
-											class="back-to-top-icon"
-										/></a
-									>
-								</div>
-							</div>
+							<Content />
 						</div>
 						<div class="w-dyn-hide w-dyn-empty">
 							<div>No items found.</div>
