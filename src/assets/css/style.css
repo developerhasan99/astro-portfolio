@@ -2302,7 +2302,7 @@ h2 {
 	margin-top: 0;
 	margin-bottom: 0;
 	font-family: "Raleway Variable", sans-serif;
-	font-size: 3rem;
+	font-size: 2rem;
 	font-weight: 700;
 	line-height: 1.35;
 }
@@ -2311,7 +2311,7 @@ h3 {
 	margin-top: 0;
 	margin-bottom: 0;
 	font-family: "Raleway Variable", sans-serif;
-	font-size: 2.5rem;
+	font-size: 1.5rem;
 	font-weight: 700;
 	line-height: 1.25;
 }
@@ -4220,7 +4220,7 @@ blockquote {
 }
 
 @media screen and (max-width: 767px) {
-	h1 {
+	/* h1 {
 		font-size: 3rem;
 	}
 
@@ -4242,7 +4242,7 @@ blockquote {
 
 	h6 {
 		font-size: 1rem;
-	}
+	} */
 
 	.padding-global {
 		padding-left: 1rem;
