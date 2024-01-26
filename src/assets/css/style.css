@@ -3662,13 +3662,13 @@ blockquote {
 .project-body-component {
 	grid-column-gap: 4rem;
 	grid-row-gap: 4rem;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: flex-start;
 	display: flex;
 	position: relative;
 }
 
-.project-sidebar {
+/* .project-sidebar {
 	width: 100%;
 	max-width: 18rem;
 	background-color: #fff;
@@ -3679,11 +3679,11 @@ blockquote {
 	position: sticky;
 	top: 2rem;
 	overflow: hidden;
-}
+} */
 
 .project-body-content {
 	width: 100%;
-	max-width: 48rem;
+	max-width: 55rem;
 	flex-direction: column;
 	display: flex;
 }
