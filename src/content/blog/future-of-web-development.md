@@ -17,11 +17,18 @@ Foresight allows developers to proactively adapt, staying ahead in a dynamic ind
 So let's have a look on the future of web development:
 
 ##### Progressive Web Applications (PWAs): Redefining User Experiences
+
+![redefining user experiences](/redefining-user-experiences.png)
+
+
 Progressive Web Applications (PWAs) are set to dominate the web development scene in 2024. These applications, known for their fast load times and seamless offline capabilities, offer users an app-like experience without the need for installation.
 
 As web developers increasingly adopt PWA principles, we can expect a paradigm shift towards more engaging and responsive websites.
 
 ##### Artificial Intelligence (AI) Integration: The Rise of Smart Websites
+
+![AI](/ai.jpeg)
+
 AI is becoming an integral part of web development, enhancing user interactions and personalization. 
 
 In 2024, expect to see AI-driven chatbots, personalized content recommendations, and dynamic user interfaces that adapt to individual preferences. 
@@ -29,6 +36,9 @@ In 2024, expect to see AI-driven chatbots, personalized content recommendations,
 The fusion of AI and web development will not only streamline user experiences but also open new avenues for innovation.
 
 ##### Voice Search Optimization: Conversational Interfaces Take Center Stage
+
+![voice search](/voice-search.webp)
+
 With the growing prevalence of voice-activated devices, optimizing websites for voice search is becoming imperative.
 
 In 2024, web developers will prioritize creating conversational interfaces, ensuring that websites are not only visually appealing but also compatible with voice-activated commands.
@@ -43,6 +53,9 @@ In 2024, expect to witness the widespread adoption of WebAssembly for complex co
 This technology will redefine the possibilities of what can be achieved on the web.
 
 ##### Cybersecurity Integration: Fortifying Digital Fortresses
+
+![cyber security](/cyber-security.jpg)
+
 As cyber threats continue to evolve, web developers in 2024 will prioritize robust cybersecurity measures.
 
 From secure coding practices to encryption standards, the focus will be on fortifying digital fortresses against potential vulnerabilities.
@@ -50,6 +63,10 @@ From secure coding practices to encryption standards, the focus will be on forti
 The future of web development demands a proactive approach to safeguarding user data and ensuring the integrity of online platforms.
 
 ##### Augmented Reality (AR) and Virtual Reality (VR): Immersive Web Experiences
+
+![virtual reality](/virtual-reality.webp)
+
+
 The integration of AR and VR technologies into web development will redefine how users engage with digital content.
 
 In 2024, anticipate immersive web experiences that go beyond traditional interfaces, offering interactive and captivating encounters.
