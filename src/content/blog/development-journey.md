@@ -7,7 +7,7 @@ heroImage: '/web-development.jpg'
 
 Welcome to the dynamic world of web development, where every line of code represents an opportunity for creativity and insight. In this blog, we embark on a journey that transcends syntax and frameworks, delving into the realm where innovation and artistry intersect.
 
-#### Crafting Beyond Code
+## Crafting Beyond Code
 
 Web development is often seen as a technical pursuit, but it's more than crafting functional websites; it's about creating digital experiences. As developers, we are artists, shaping the online landscape with every project. The canvas may be virtual, but the creativity poured into it is very real.
 
@@ -20,6 +20,8 @@ Insights gained from overcoming challenges are the building blocks of expertise,
 ##### Example:
 Navigating through intricate algorithms and debugging sessions, developers gain not just technical skills but the ability to approach problems with a creative mindset, unraveling complexities with every keystroke.
 
+![art of problem solving](/Creative-Problem-Solving-Process.jpeg)
+
 #### Project Chronicles - Crafting Digital Stories
 
 Projects are not just collections of files and folders; they are digital stories waiting to be told.
@@ -29,6 +31,8 @@ From concept to execution, developers weave narratives into their work. Understa
 ##### Example:
 A portfolio website isn't just a compilation of skills; it's a visual story showcasing the developer's journey, skills, and personality, offering a unique and memorable user experience.
 
+![portfolio like story telling](/Mehedi-Hasan-Fullstack-Web-Developer.png)
+
 #### Technological Landscapes - Insights into Innovation
 
 In a rapidly evolving technological landscape, developers must be on the forefront of innovation. Exploring new frameworks, languages, and tools provides insights into what's possible.
@@ -37,6 +41,8 @@ Adapting and integrating emerging technologies elevate the development process.
 
 ##### Example:
 The shift from traditional web development to the serverless architecture demonstrates how insights into new technologies can reshape the way we approach and build applications.
+
+![digital landscape](/digital-landscape.jpg)
 
 #### CodeCraft - Unveiling Creativity
 
@@ -51,8 +57,11 @@ Developers often find joy in optimizing code not just for performance but for el
 
 The web development journey is a perpetual learning experience. Insights gained from both successes and failures are invaluable. Embracing the path to mastery involves continuous learning, adaptability, and an openness to new perspectives.
 
+
 ##### Example:
 Learning a new framework may come with challenges, but the insights gained during the process contribute to a developer's versatility, making them adept at adopting new technologies swiftly.
+
+![learning programming](/How-to-Learn-Programming.png)
 
 #### Where Code Meets Creativity
 

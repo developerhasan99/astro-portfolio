@@ -2549,13 +2549,15 @@ blockquote {
 }
 
 .rich-text p {
-	color: #536075;
+	color: #33363b;
 	margin-bottom: 1.5rem;
+	font-size: 18px;
 }
 
 .rich-text ul,
 .rich-text ol {
 	color: #536075;
+	font-size: 18px;
 	margin-top: 1rem;
 	margin-bottom: 1.5rem;
 	padding-left: 1.25rem;
