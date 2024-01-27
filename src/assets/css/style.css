@@ -2542,18 +2542,32 @@ blockquote {
 	line-height: 1.25;
 }
 
+.project-client {
+	font-size: 20px;
+	font-weight: thin;
+	-webkit-text-fill-color: transparent;
+	background-image: linear-gradient(to right, #00a5ca, #486ff8);
+	-webkit-background-clip: text;
+	background-clip: text;
+	margin-bottom: 16px;
+}
+
+.project-body-content h1,
 .rich-text h1 {
 	color: #0c111f;
 	margin-top: 2rem;
 	margin-bottom: 1.5rem;
 }
 
+.project-body-content p,
 .rich-text p {
 	color: #33363b;
 	margin-bottom: 1.5rem;
 	font-size: 18px;
 }
 
+.project-body-content ul,
+.project-body-content ol,
 .rich-text ul,
 .rich-text ol {
 	color: #536075;
@@ -2563,24 +2577,28 @@ blockquote {
 	padding-left: 1.25rem;
 }
 
+..project-body-content h6,
 .rich-text h6 {
 	color: #0c111f;
 	margin-top: 1.25rem;
 	margin-bottom: 0.5rem;
 }
 
+.project-body-content h5,
 .rich-text h5 {
 	color: #0c111f;
 	margin-top: 1.25rem;
 	margin-bottom: 0.75rem;
 }
 
+.project-body-content h3,
 .rich-text h3 {
 	color: #0c111f;
 	margin-top: 1.75rem;
 	margin-bottom: 1.25rem;
 }
 
+.project-body-content h2,
 .rich-text h2 {
 	color: #0c111f;
 	margin-top: 1.5rem;
@@ -2600,6 +2618,7 @@ blockquote {
 	font-weight: 600;
 }
 
+.project-body-content blockquote,
 .rich-text blockquote {
 	color: #536075;
 	border-left-color: #00a5ca;
@@ -2610,6 +2629,7 @@ blockquote {
 	line-height: 1.5;
 }
 
+.project-body-content h4,
 .rich-text h4 {
 	color: #0c111f;
 	margin-top: 1.5rem;
@@ -2620,8 +2640,13 @@ blockquote {
 	margin-top: 1rem;
 }
 
+.project-body-content img,
 .rich-text img {
 	border-radius: 0.5rem;
+}
+
+.project-body-content img[alt="responsiveness"] {
+	height: 500px;
 }
 
 .styleguide-row {
@@ -3337,7 +3362,7 @@ blockquote {
 .projects-overlay {
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(0, 0, 0, 0.8);
 	justify-content: center;
 	transition: 0.3s ease-in-out;
 	align-items: center;
@@ -3351,6 +3376,7 @@ blockquote {
 }
 .projects-title {
 	text-transform: uppercase;
+	text-align: center;
 }
 
 .projects-top-horizontal-line {

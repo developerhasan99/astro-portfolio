@@ -31,7 +31,11 @@ const { Content } = await post.render();
 							</div><h1 class="heading-style-h3">{post.data.title}</h1><div
 								class="space-medium"
 							>
-							</div><div class="text-color-grey-400">
+							</div>
+							<div class="project-client">
+								Projects client: {post.data.client}
+							</div>
+							<div class="text-color-grey-400">
 								{post.data.description}
 							</div><div class="space-medium"></div><a
 								href="/project"
