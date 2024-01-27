@@ -3676,6 +3676,7 @@ blockquote {
 
 iframe {
 	border-radius: 8px !important;
+	margin-bottom: 16px;
 }
 
 .project-image-wrapper {
