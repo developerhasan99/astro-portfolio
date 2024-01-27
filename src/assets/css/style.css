@@ -146,7 +146,7 @@ select {
 button,
 html input[type="button"],
 input[type="reset"] {
-	-webkit-appearance: button;
+	/* -webkit-appearance: button; */
 	cursor: pointer;
 }
 
@@ -2577,7 +2577,7 @@ blockquote {
 	padding-left: 1.25rem;
 }
 
-..project-body-content h6,
+.project-body-content h6,
 .rich-text h6 {
 	color: #0c111f;
 	margin-top: 1.25rem;
@@ -3672,6 +3672,10 @@ blockquote {
 	flex-direction: column;
 	align-items: flex-start;
 	display: flex;
+}
+
+iframe {
+	border-radius: 8px !important;
 }
 
 .project-image-wrapper {

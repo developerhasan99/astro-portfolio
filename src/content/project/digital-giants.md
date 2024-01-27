@@ -42,6 +42,8 @@ I have to ensure that the website is capitalize on SEO best practices, limiting 
 
 ## Approach For This Project:
 
+![approach](/approch.jpg)
+
 ### 1.Discovery Phase:
 
 Conducted in-depth consultations with Digital Giants Corporation to understand their brand, target audience, and specific business objectives. Analyzed competitors and industry trends for a comprehensive strategy.
@@ -65,7 +67,27 @@ Integrated SEO best practices throughout the website, including optimized meta t
 Coordinated a smooth launch, closely monitoring website performance and user interactions post-launch. Implemented necessary adjustments based on user feedback and 
 analytics data.
 
+## Tools Needed For This Project
+
+![design tools](/Web-Design-Tools.jpg)
+
+This project requires essential tools for seamless execution.
+
+Key tools include project management software for streamlined coordination, coding frameworks for development, graphic design tools for visuals, and version control systems for collaboration.
+
+These tools empower the team to efficiently meet project milestones and ensure successful outcomes.
+
+###### Here's a list of tool that I have used in this project:
+
+- Bricks Builder Theme
+- Figma (design was here)
+- Templating system for every common Section's
+- svg support Plugin
+- wordpress as CMS
+
 ## Results:
+
+<iframe width="560" height="350" src="/video-of-digital-giants.mp4" frameborder="0" allowfullscreen></iframe>
 
 ### 1.Stunning Visual Upgrade:
 The website showcased a modern design, aligning with Digital Giants Corporation's brand identity and providing a visually appealing user experience.
