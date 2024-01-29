@@ -157,3 +157,5 @@ As it is a marketplace for freelancer's its has features like Upwork, Fiver, Fre
 - Admin - Control all of the above and provide mobile support
 
 ## Result
+
+![messaging](/messeging.jpg)
