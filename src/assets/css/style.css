@@ -2645,6 +2645,10 @@ blockquote {
 	border-radius: 0.5rem;
 }
 
+.project-body-component img[alt="messaging"],
+.project-body-component img[alt="search and filters"] {
+	height: 400px;
+}
 .project-body-content img[alt="responsiveness"] {
 	height: 500px;
 }
