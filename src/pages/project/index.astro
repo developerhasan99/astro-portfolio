@@ -29,6 +29,7 @@ const posts = await getCollection("project");
 											<a
 												data-w-id="450459d4-86eb-2e07-9d58-3bc8cf7f4b64"
 												style={`background-image:url('${post.data.heroImage}')`}
+												transition:name={`project-image-${post.slug}`}
 												href={`/project/${post.slug}/`}
 												class="projects-item w-inline-block"
 											>
@@ -36,7 +37,10 @@ const posts = await getCollection("project");
 													data-w-id="450459d4-86eb-2e07-9d58-3bc8cf7f4b65"
 													class="projects-overlay"
 												>
-													<div class="projects-title" style="">
+													<div
+														class="projects-title"
+														transition:name={`project-title-${post.slug}`}
+													>
 														{post.data.title}
 													</div>
 													<div

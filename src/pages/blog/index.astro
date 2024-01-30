@@ -38,7 +38,7 @@ const posts = await getCollection("blog");
 												>
 													<div class="blog-item-image-wrapper">
 														<img
-															transition:name={`post-image-${post.id}`}
+															transition:name={`blog-post-image-${post.id}`}
 															alt={post.data.title}
 															loading="lazy"
 															src={post.data.heroImage}
@@ -48,19 +48,19 @@ const posts = await getCollection("blog");
 													<div class="blog-item-content">
 														<div
 															class="text-size-small text-color-grey"
-															transition:name={`post-name-${post.id}`}
+															transition:name={`blog-post-name-${post.id}`}
 														>
 															{post.data.pubDate}
 														</div>
 														<h3
 															class="heading-style-h5 text-color-black"
-															transition:name={`post-title-${post.id}`}
+															transition:name={`blog-post-title-${post.id}`}
 														>
 															{post.data.title}
 														</h3>
 														<div
 															class="text-color-grey"
-															transition:name={`post-description-${post.id}`}
+															transition:name={`blog-post-description-${post.id}`}
 														>
 															{post.data.description}
 														</div>

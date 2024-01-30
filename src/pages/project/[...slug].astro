@@ -25,26 +25,31 @@ const { Content } = await post.render();
 				<div class="padding-section-medium">
 					<div class="project-component">
 						<div class="project-content">
-							<div class="caption text-color-gradient">Case study</div><div
-								class="space-small"
+							<div class="caption text-color-gradient">Case study</div>
+							<div class="space-small"></div>
+							<h1
+								class="heading-style-h3"
+								transition:name={`project-title-${post.slug}`}
 							>
-							</div><h1 class="heading-style-h3">{post.data.title}</h1><div
-								class="space-medium"
-							>
-							</div>
+								{post.data.title}
+							</h1>
+							<div class="space-medium"></div>
 							<div class="project-client">
 								Projects client: {post.data.client}
 							</div>
 							<div class="text-color-grey-400">
 								{post.data.description}
-							</div><div class="space-medium"></div><a
-								href="/project"
-								class="button white-icon w-inline-block"
-							>
+							</div>
+							<div class="space-medium"></div>
+							<a href="/project" class="button white-icon w-inline-block">
 								&lAarr;
-								<div>Back to Projects</div></a
-							>
-						</div><div class="project-image-wrapper">
+								<div>Back to Projects</div>
+							</a>
+						</div>
+						<div
+							class="project-image-wrapper"
+							transition:name={`project-image-${post.slug}`}
+						>
 							<img
 								src={post.data.heroImage}
 								loading="lazy"
