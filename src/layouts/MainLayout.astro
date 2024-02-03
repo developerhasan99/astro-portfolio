@@ -1,10 +1,10 @@
 ---
 import "aos/dist/aos.css";
 // Import Fonts
-import "@fontsource-variable/raleway";
-import "@fontsource/ibm-plex-sans/400.css";
-import "@fontsource/ibm-plex-sans/500.css";
-import "@fontsource/ibm-plex-sans/600.css";
+// import "@fontsource-variable/raleway";
+// import "@fontsource/ibm-plex-sans/400.css";
+// import "@fontsource/ibm-plex-sans/500.css";
+// import "@fontsource/ibm-plex-sans/600.css";
 // import Main Style
 import { ViewTransitions } from "astro:transitions";
 import Navbar from "../partials/Navbar.astro";
@@ -22,6 +22,11 @@ import absolute_circle from "../assets/absolute-circle.svg";
 		<meta content="width=device-width, initial-scale=1" name="viewport" />
 		<title>Mehedi Hasan - Fullstack Web Developer</title>
 		<link rel="icon" type="image/x-icon" href={favicon.src} />
+		<link
+			href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,701,300,401,400&display=swap"
+			rel="stylesheet"
+		/>
+
 		<ViewTransitions />
 	</head>
 	<body>
