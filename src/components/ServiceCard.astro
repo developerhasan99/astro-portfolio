@@ -1,0 +1,25 @@
+---
+const {icon, title, description} = Astro.props;
+---
+
+<div class="services-wrapper">
+    <div class="services-arrow-wrapper">
+        <svg width="12" height="24" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0L12 12L0 24V0Z" fill="#00A5CA"/>
+        </svg>									
+    </div>
+    <div class="services-content">
+        <div class="services-image-wrapper">
+            <img
+                data-aos="fade-left"
+                src={icon.src}
+                loading="lazy"
+                alt="UX Research"
+            />
+        </div>
+        <h3 class="heading-style-h5">{title}</h3>
+        <div class="text-color-grey-400">
+            {description}
+        </div>
+    </div>
+</div>

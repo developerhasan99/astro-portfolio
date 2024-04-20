@@ -1,0 +1,11 @@
+---
+const {Icon, text, link} = Astro.props;
+---
+
+<a
+    href={link}
+>
+    <!-- <img src={icon.src} alt={text}> -->
+    <Icon class="text-white" height={20} />
+    <span class="h-0 w-0 overflow-hidden absolute -top-10">{text}</span>
+</a>

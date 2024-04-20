@@ -1,0 +1,13 @@
+---
+import { Image } from "astro:assets";
+import white_logo from "../assets/logo-white.svg";
+---
+<a
+    href="/"
+    aria-current="page"
+    class="nav-logo-link w-inline-block w--current"
+>
+
+    <Image src={white_logo} alt="Developer Hasan" loading="eager" height={40} width={145} />
+    <span class="h-0 w-0 overflow-hidden absolute -top-10">Logo</span>
+</a>

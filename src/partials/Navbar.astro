@@ -1,67 +1,15 @@
 ---
-import white_logo from "../assets/logo-white.svg";
 // Social Icons
-import upwork_icon from "../assets/icons/upwork.svg";
-import facebook_icon from "../assets/icons/facebook.svg";
-import linkedin_icon from "../assets/icons/linkedin.svg";
-import menu_open_icon from "../assets/icons/menu-svgrepo-com.svg";
-import menu_close_icon from "../assets/icons/cross-svgrepo-com.svg";
+import Logo from "../components/Logo.astro";
+import Nav from "../components/Nav.tsx";
+import SocialIcons from "../components/SocialIcons.astro";
 ---
 
-<div role="banner" class="nav-component w-nav">
-	<div class="padding-global">
-		<div class="nav-container">
-			<a
-				href="/"
-				aria-current="page"
-				class="nav-logo-link w-inline-block w--current"
-			>
-				<img
-					src={white_logo.src}
-					loading="lazy"
-					alt="Developer Hasan"
-					class="nav-logo"
-				/>
-				<span class="assistive-text">Logo</span>
-			</a>
-
-			<button class="hamburger-menu-btn">
-				<div class="menu-open">
-					<img src={menu_open_icon.src} alt="" />
-				</div>
-				<div class="menu-close">
-					<img src={menu_close_icon.src} alt="" />
-				</div>
-			</button>
-			<nav role="navigation" class="nav-menu w-nav-menu">
-				<a href="/#about" class="nav-link w-nav-link">About</a>
-				<a href="/#Services" class="nav-link w-nav-link">Services</a>
-				<a href="/project" class="nav-link w-nav-link">Work</a>
-				<a href="/blog" class="nav-link w-nav-link">Blog</a>
-				<div class="nav-social-links">
-					<a
-						href="https://www.upwork.com/freelancers/~01e0d306e3c729d12e"
-						class="nav-social-link w-inline-block"
-					>
-						<img src={upwork_icon.src} loading="lazy" alt="Upwork" />
-						<span class="assistive-text">Upwork</span>
-					</a>
-					<a
-						href="https://www.facebook.com/developerhasan99"
-						class="nav-social-link w-inline-block"
-					>
-						<img src={facebook_icon.src} loading="lazy" alt="Facebook" />
-						<span class="assistive-text">Facebook</span>
-					</a>
-					<a
-						href="https://www.linkedin.com/in/developerhasan99/"
-						class="nav-social-link w-inline-block"
-					>
-						<img src={linkedin_icon.src} loading="lazy" alt="Linkedin" />
-						<span class="assistive-text">Linkedin</span>
-					</a>
-				</div>
-			</nav>
-		</div>
+<header role="banner" class="fixed top-0 left-0 w-full z-50 pt-4 pb-4 bg-navyBlue">
+	<div class="max-w-screen-xl mx-auto flex justify-between">
+		<Logo />
+		<Nav client:load>
+			<SocialIcons />
+		</Nav>
 	</div>
-</div>
+</header>

@@ -1,0 +1,48 @@
+---
+import { Image } from "astro:assets";
+import books_lover from "../assets/books-lover.svg";
+import profile_pic from "../assets/profile.jpeg";
+import ux_entusist from "../assets/ux-enthusist.svg";
+import web_developer from "../assets/web-developer.svg";
+
+
+---
+
+<section id="about" class="py-24">
+    <div class="max-w-screen-sm mx-auto px-4 flex flex-col gap-4 items-center">
+        <p class="text-teal text-sm uppercase tracking-widest">Little More About Me</p>
+        <Image src={profile_pic} alt="Mehedi Hasan" width={200} height={200} class="rounded-full" loading="eager" />
+        <p class="text-lg text-gray">
+            Hey! My name is Mehedi Hasan and I'm a UX Enthusiast with
+            skills in Front-End and WordPress Development. Since beginning
+            my journey as a freelance designer nearly 6 years ago.
+        </p>
+        <p class="text-lg text-gray">
+            I've done remote work for agencies, consulted for startups,
+            and collaborated with talented people to create digital
+            products for both business and consumer use.
+        </p>
+        <p class="text-lg text-gray">
+            When I'm not on the computer, I enjoy reading books, swimming,
+            and petting animals.
+        </p>
+        <div class="bg-lightNavyBlue border border-navyBorder p-4 rounded w-full">
+            <p class="text-teal text-lg text-center uppercase tracking-widest mb-6">TL;DR? SELF PROCLAMATIONS:</p>
+            <div class="flex justify-around">
+                <div class="flex flex-col items-center gap-2">
+                    <Image src={ux_entusist} alt="Ux Enthusist" width={50} />
+                    <h3 class="text-sm uppercase text-gray font-thin text-center">UX Enthusist</h3>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <Image src={web_developer} alt="Web Developer" width={50} />
+                    <h3 class="text-sm uppercase text-gray font-thin text-center">Web Developer</h3>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <Image src={books_lover} alt="Books Lover" width={50} />
+                    <h3 class="text-sm uppercase text-gray font-thin text-center">Books Lover</h3>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>

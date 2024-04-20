@@ -1,11 +1,6 @@
 ---
 import "aos/dist/aos.css";
-// Import Fonts
-// import "@fontsource-variable/raleway";
-// import "@fontsource/ibm-plex-sans/400.css";
-// import "@fontsource/ibm-plex-sans/500.css";
-// import "@fontsource/ibm-plex-sans/600.css";
-// import Main Style
+// Import Main Style
 import { ViewTransitions } from "astro:transitions";
 import Navbar from "../partials/Navbar.astro";
 import Footer from "../partials/Footer.astro";
@@ -13,7 +8,6 @@ import "../assets/css/style.css";
 
 // Import Images
 import favicon from "../assets/favicon.png";
-import absolute_circle from "../assets/absolute-circle.svg";
 ---
 
 <html>
@@ -29,17 +23,9 @@ import absolute_circle from "../assets/absolute-circle.svg";
 
 		<ViewTransitions />
 	</head>
-	<body>
+	<body class="bg-navyBlue">
+		
 		<div class="page-wrapper">
-			<div class="absolute-circle">
-				<img src={absolute_circle.src} loading="lazy" alt="Absolute Circle" />
-			</div>
-			<div class="lines-wrapper">
-				<div class="absolute-line"></div>
-				<div class="absolute-line"></div>
-				<div class="absolute-line"></div>
-				<div class="absolute-line right-line"></div>
-			</div>
 			<Navbar />
 			<main class="main-wrapper">
 				<slot />
@@ -72,7 +58,6 @@ import absolute_circle from "../assets/absolute-circle.svg";
 			<Footer />
 		</div>
 
-		<script src="../js/script.js"></script>
 		<script>
 			import { aosInit } from "../js/aos";
 			// runs on initial page load

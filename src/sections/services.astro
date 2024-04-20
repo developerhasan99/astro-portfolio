@@ -1,0 +1,32 @@
+---
+import support from "../assets/icons/services/support.svg";
+import ux_research from "../assets/icons/services/ux-research.svg";
+import web_design from "../assets/icons/services/web-design.svg";
+import web_development from "../assets/icons/services/web-development.svg";
+import ServiceCard from "../components/ServiceCard.astro";
+---
+
+<section id="Services" class="section-services">
+    <div class="padding-global">
+        <div class="container-large">
+            <div class="padding-section-medium">
+                <div class="max-width-large">
+                    <div class="caption text-color-secondary">Services</div>
+                    <div class="space-small"></div>
+                    <h2>Discover My Unique Skillset 🦾</h2>
+                    <div class="space-medium"></div>
+                    <div class="text-color-grey-400">
+                        Check out my services that will suit your needs.
+                    </div>
+                </div>
+                <div class="space-large"></div>
+                <div class="services-component">
+                    <ServiceCard icon={ux_research} title="UX Research" description="I do UX research to provide an Up to Date user experience to my client. And it's a crucial aspect of the design process." />
+                    <ServiceCard icon={web_design} title="Design" description="I value simple content structure, clean design patterns, and thoughtful interactions." />
+                    <ServiceCard icon={web_development} title="Development" description="I like to code things from scratch, and enjoy bringing ideas to life in the browser." />
+                    <ServiceCard icon={support} title="Support" description="I provide my Clients full support on their bussiness issue relevent to my knowledge and skills." />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
