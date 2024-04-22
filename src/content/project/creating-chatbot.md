@@ -3,6 +3,7 @@ title: "Creating a Chat Bot for MyBizvi Company"
 description: "Developing a cutting-edge chatbot for MyBizVi, enhancing customer engagement, streamlining inquiries, and boosting efficiency.Personalized solutions, seamless interactions, and advanced AI-driven technology for optimal business communication."
 client: "MyBizVi360 Agency"
 heroImage: "/chat-bot-for-mybizvi.avif"
+
 ---
 
 ## OverView:

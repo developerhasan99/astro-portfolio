@@ -1,8 +1,9 @@
 ---
 title: "Insights and Creativity in the Web Development Journey"
 description: 'Explore the intersection of code and creativity on a web development journey filled with insightful discoveries.'
-pubDate: 'Jan 23 2024'
-heroImage: '/web-development.jpg'
+tags: ['web', 'dev']
+date: 'Jan 23 2024'
+image: '/web-development.jpg'
 ---
 
 Welcome to the dynamic world of web development, where every line of code represents an opportunity for creativity and insight. In this blog, we embark on a journey that transcends syntax and frameworks, delving into the realm where innovation and artistry intersect.

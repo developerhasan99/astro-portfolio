@@ -1,13 +1,18 @@
 ---
+// Supports weights 200-800
+import '@fontsource-variable/plus-jakarta-sans';
+
 import "aos/dist/aos.css";
 // Import Main Style
 import { ViewTransitions } from "astro:transitions";
 import Navbar from "../partials/Navbar.astro";
 import Footer from "../partials/Footer.astro";
-import "../assets/css/style.css";
+// import "../assets/css/style.css";
 
 // Import Images
 import favicon from "../assets/favicon.png";
+
+
 ---
 
 <html>
@@ -16,10 +21,6 @@ import favicon from "../assets/favicon.png";
 		<meta content="width=device-width, initial-scale=1" name="viewport" />
 		<title>Mehedi Hasan - Fullstack Web Developer</title>
 		<link rel="icon" type="image/x-icon" href={favicon.src} />
-		<link
-			href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,701,300,401,400&display=swap"
-			rel="stylesheet"
-		/>
 
 		<ViewTransitions />
 	</head>
@@ -29,29 +30,18 @@ import favicon from "../assets/favicon.png";
 			<Navbar />
 			<main class="main-wrapper">
 				<slot />
-				<section class="section-cta">
-					<div class="padding-global">
-						<div class="container-medium">
-							<div class="padding-section-large">
-								<div class="cta-component" data-aos="fade-up">
-									<div class="text-align-center">
-										<div class="caption">Let’s Talk</div>
-										<div class="space-small"></div>
-										<h2 class="heading-style-h3">
-											Discuss your business problems
-										</h2>
-										<div class="space-small"></div>
-										<div class="text-color-grey-400">
-											Connect with me! Whether you have a project in mind, want
-											to collaborate, or just share ideas, I'm here. Let's bring
-											your vision to life together.
-										</div>
-										<div class="space-small"></div>
-										<a href="#contact" class="button w-button">Contact Now</a>
-									</div>
-								</div>
-							</div>
-						</div>
+
+
+				<section class="py-24 bg-[url(/cta-bg.png)] bg-cover">
+					<div class="max-w-screen-lg mx-auto p-16 rounded-lg bg-navyBlue flex flex-col items-center">
+						<p class="text-teal text-sm uppercase tracking-widest text-center">Let's Talk</p>
+						<h2 class="text-white text-4xl font-bold text-center mb-4 mt-2">Have an Oppertunity for Me?</h2>
+						<p class="text-gray text-center text-lg mb-4">
+							Connect with me! Whether you have a project in mind, want
+							to collaborate, or just share ideas, I'm here. Let's bring
+							your vision to life together.
+						</p>
+						<a class="text-white bg-blue hover:bg-purpleBlue transition py-2 px-5 rounded-full" href="https://www.linkedin.com/in/developerhasan99/">Contact Me</a>
 					</div>
 				</section>
 			</main>

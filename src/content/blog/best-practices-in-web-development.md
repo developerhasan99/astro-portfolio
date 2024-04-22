@@ -1,8 +1,9 @@
 ---
 title: 'Mastering Web Development: Your Guide to Best Practices'
 description: "Master web development's best practices—efficiency in coding, responsive design for seamless, impactful digital experiences. Explore key principles effortlessly."
-pubDate: 'Jan 24 2024'
-heroImage: '/mastering-web-development.jpg'
+tags: ['web', 'dev']
+date: 'Jan 24 2024'
+image: '/mastering-web-development.jpg'
 ---
 
 In the dynamic landscape of web development, mastering best practices is crucial to crafting websites that not only look stunning but also perform seamlessly across various devices. Let's embark on a journey through the key principles that elevate your web development game to the next level.

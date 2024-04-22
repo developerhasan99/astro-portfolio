@@ -1,0 +1,67 @@
+---
+import { Image } from "astro:assets";
+import bill_johnson_pic from "../assets/bill-jhonson.webp";
+import stars from "../assets/star.svg";
+import david_dav_pic from "../assets/david-dav.webp";
+import rafal_pic from "../assets/rafal.jpg";
+
+const testimonials = [
+	{
+		review: "“Mehedi did an excellent job on my WordPress project, showcasing his skills in both PHP and WordPress. His expertise was evident, and he delivered outstanding results. I'm highly pleased with his work!”",
+		name: "Bill Johnson",
+		title: "Founder & CEO, Evenrise",
+		image: bill_johnson_pic,
+	},
+	{
+		review: "“Mehedi is an incredibly talented WordPress developer. He is able to create a beautiful and professional website for me. I highly recommend him for any WordPress project.”",
+		name: "David Dav",
+		title: "Owner, WBmooreLaw",
+		image: david_dav_pic,
+	},
+	{
+		review: "“Mehedi has been amazing. This is the 3rd project that we've worked together on and he has delivered every time. Highly recommend.”",
+		name: "Rafal",
+		title: "Founder, Ksiegowosc24",
+		image: rafal_pic,
+	},
+];
+---
+
+<section id="experience" class="py-24">
+	<div class="max-w-screen-xl mx-auto px-4">
+		<p class="text-teal text-sm uppercase tracking-widest">Testimonials</p>
+		<h2 class="text-white text-3xl md:text-4xl font-bold leading-normal mb-4 mt-2">
+			What People Said 😊
+		</h2>
+		<p class="text-gray text-lg mb-12">
+			Explore glowing client feedback in my Testimonials section,
+			showcasing successful collaborations and satisfied partners. <br />
+			Discover the impact of my work.
+		</p>
+		<div class="grid gap-8 grid-cols-1 md:grid-cols-3">
+			{
+				testimonials.map((test) => (
+					<div class="p-4 border bg-lightNavyBlue border-navyBorder rounded flex flex-col">
+						<Image src={stars} loading="lazy" alt="5 Star" />
+						<p class="text-gray my-4">{test.review}</p>
+						<div class="flex items-center gap-4 mt-auto">
+							<Image
+								class="rounded-full h-12 w-12 object-cover"
+								src={test.image}
+								alt={test.name}
+							/>
+							<div>
+								<h3 class="text-lg font-regular inline-block text-transparent bg-gradient-to-r from-blue to-[#486ff8] bg-clip-text">
+									{test.name}
+								</h3>
+								<p class="text-gray text-xs mb-0">
+									{test.title}
+								</p>
+							</div>
+						</div>
+					</div>
+				))
+			}
+		</div>
+	</div>
+</section>

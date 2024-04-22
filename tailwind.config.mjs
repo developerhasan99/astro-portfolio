@@ -20,7 +20,7 @@ export default {
 				gray: '#97a1b6'
 			},
 			fontFamily: {
-				sans: ["Satoshi", "sans-serif"],
+				sans: ["Plus Jakarta Sans Variable", "sans-serif"],
 			}
 		},
 	},

@@ -1,8 +1,9 @@
 ---
 title: 'Navigating the Horizon: The Future of Web Development in 2024'
 description: "Explore the transformative trends shaping web development in 2024. From AI integration to immersive experiences, anticipate a dynamic landscape defining the digital future."
-pubDate: 'Jan 24 2024'
-heroImage: '/future-of-web-development.png'
+date: 'Jan 24 2024'
+tags: ['web', 'dev']
+image: '/future-of-web-development.png'
 ---
 
 In the ever-evolving realm of technology, the landscape of web development is poised for groundbreaking transformations in 2024. As we stand on the cusp of a new era, several trends and innovations are set to shape the future of web development, influencing the way we create and experience the digital world.

@@ -5,33 +5,27 @@ import white_logo from "../assets/logo-white.svg";
 import SocialIcons from "../components/SocialIcons.astro";
 ---
 
-<footer class="footer-component">
-	<div class="padding-global">
-		<div class="container-large">
-			<div class="padding-section-small">
-				<div class="footer-top">
-					<a
-						href="/"
-						aria-current="page"
-						class="nav-logo-link w-inline-block w--current"
-					>
-						<Image src={white_logo} alt="Developer Hasan" loading="loading" height={40} width={145} />
-						<span class="h-0 w-0 overflow-hidden absolute -top-10">Logo</span>
-					</a>
-					<div class="text-color-grey-400">
-						Explore my portfolio, connect for collaboration. Stay updated with
-						articles. Follow on social media for inspiration. Let's build
-						something extraordinary!
-					</div>
-					<SocialIcons />
-					<nav role="navigation" class="flex gap-12 items-center">
-						<a href="/#about" class="hover:text-blue transition-colors">About</a>
-						<a href="/#experience" class="hover:text-blue transition-colors">Experience</a>
-						<a href="/project" class="hover:text-blue transition-colors">Work</a>
-						<a href="/blog" class="hover:text-blue transition-colors">Blog</a>
-					</nav>
-				</div>
-			</div>
+<footer class="py-12">
+	<div class="max-w-screen-md mx-auto px-4 flex flex-col gap-10 items-center">
+		<a
+			href="/"
+			aria-current="page"
+			class="nav-logo-link w-inline-block w--current"
+		>
+			<Image src={white_logo} alt="Developer Hasan" loading="lazy" height={40} width={145} />
+			<span class="h-0 w-0 overflow-hidden absolute -top-10">Logo</span>
+		</a>
+		<div class="text-gray text-lg text-center">
+			Explore my portfolio, connect for collaboration. Stay updated with
+			articles. Follow on social media for inspiration. Let's build
+			something extraordinary!
 		</div>
+		<SocialIcons />
+		<nav role="navigation" class="flex gap-x-8 gap-y-4 items-center justify-center flex-wrap">
+			<a href="/#about" class="text-white hover:text-blue transition-colors">About</a>
+			<a href="/#experience" class="text-white hover:text-blue transition-colors">Experience</a>
+			<a href="/project" class="text-white hover:text-blue transition-colors">Work</a>
+			<a href="/blog" class="text-white hover:text-blue transition-colors">Blog</a>
+		</nav>
 	</div>
 </footer>
